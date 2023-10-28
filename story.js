@@ -56,17 +56,19 @@ const storyParts = {
         }
     },
     // ... continue structuring for all the nodes.
-};
+  };
 
 // Function to render a part of the story
 function renderStoryPart(part) {
+    console.log(part);
     document.getElementById("story-text").innerHTML = part.text;
     document.getElementById("story-image").src = part.image;
     setUpButtons(part);
 }
 
 // Helper function to set up button event listeners
-function setUpButtons(part) {    
+function setUpButtons(part) {  
+    console.log('setUpButtons')  
     const optionAButton = document.getElementById("optionA");
     const optionBButton = document.getElementById("optionB");
     // Update button texts
@@ -82,6 +84,7 @@ function setUpButtons(part) {
     optionBButton.replaceWith(optionBButton.cloneNode(true));
 
     optionAButton.addEventListener("click", function () {
+        console.log(part.options.A.nextPart, 'click')
         currentPart = storyParts[part.options.A.nextPart];
         renderStoryPart(currentPart);
     });

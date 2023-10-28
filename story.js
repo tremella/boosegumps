@@ -83,12 +83,12 @@ function setUpButtons(part) {
     optionAButton.replaceWith(optionAButton.cloneNode(true));
     optionBButton.replaceWith(optionBButton.cloneNode(true));
 
-    document.getElementById("optionA").addEventListener("click", function () {
+    optionAButton.addEventListener("click", function () {
         currentPart = storyParts[part.options.A.nextPart];
         renderStoryPart(currentPart);
     });
 
-    document.getElementById("optionB").addEventListener("click", function () {
+    optionBButton.addEventListener("click", function () {
         currentPart = storyParts[part.options.B.nextPart];
         renderStoryPart(currentPart);
     });

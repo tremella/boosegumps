@@ -14,8 +14,8 @@ body {
 header {
     display: flex;        
     margin-bottom: 20px;
-    border: 2px solid white;    
-    border-radius: 10px;
+    border: 1px solid white;    
+    border-radius: 2px;
     width: 100%; /* ensures full width */
     box-sizing: border-box; /* makes sure padding and border are included in width */
     padding: 0 20px; /* gives some space on the sides */

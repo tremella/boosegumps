@@ -144,17 +144,39 @@ const storyParts = {
       }
   },
   read_contents: {
-      text: `You read the book. You are possessed by an entity. You consume your twin.`,
+      text: `Taking a deep breath, you start reciting the highlighted words. As you do, the room begins to grow colder, and an oppressive weight settles around you. The words don’t just echo in your ears, but in your very soul. A malevolent force, ancient and powerful, seeps into you from the book.
+
+      Your vision blurs and you feel yourself being pushed to the back of your own mind, a dark presence taking over. A demonic entity, awakened by the words you read, now possesses your body. An insatiable hunger consumes every fiber of your being.
+      
+      Your mouth stretches impossibly wide, revealing countless rows of sharp, jagged teeth. Alex, horror evident in his eyes, stammers, "Susie? What... What have you done?"
+      
+      But there's no Susie anymore. Only the demon and its hunger.
+      
+      With a swift, ravenous movement, you close the distance between you and Alex. His screams echo in the room, but are quickly silenced.
+      
+      The mansion, with its countless mysteries and shadows, now has a new, malevolent denizen. And within you, where Susie once stood, there remains only an endless, insatiable hunger.
+      `,
       image: "assets/cover_house.jpg",
       options: {
           A: {
               nextPart: "start",
-              text: "play again",
+              text: "THE END.",
           },
       }
   },
   examine_binding: {
-      text: `You examine the binding while Alex checks our the rest of the library. You are suddenly kidnapped and pass out.`,
+      text: `You say, "Let's take a closer look at the binding first."
+
+      You reach out and gently touch the book's cover. The texture is unlike anything you've felt before, rough yet oddly familiar. The chilling realisation hits you: it's human skin.
+      
+      Your heart races, and a cold dread settles in your stomach. "Alex," you whisper, pulling your hand back as if burned, "This... this is skin."
+      
+      But there's no reply. You glance around, searching for your sibling. "Alex?" you call out, your voice trembling.
+      
+      He seems to have wandered deeper into the library, perhaps looking for another exit. You're about to call out to him again when suddenly, a strong hand covers your mouth from behind, stifling your scream. Panic surges through you as you try to struggle, but the grip is too strong, and darkness quickly envelops you as you succumb to unconsciousness.
+      
+      The last thing you remember is the faint scent of old books and the cold touch of the leather-bound tome.
+      `,
       image: "assets/cover_house.jpg",
       options: {
           A: {

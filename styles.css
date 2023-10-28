@@ -1,27 +1,34 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;
-    color: white;
+    background-color: black;    
     padding: 20px;
+    color: #95C120;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
-    border: 1px solid white;
     padding: 10px;
 }
 
 header {
+    display: flex;        
+    margin-bottom: 20px;
+    border: 2px solid white;    
+    border-radius: 10px;
+    width: 100%; /* ensures full width */
+    box-sizing: border-box; /* makes sure padding and border are included in width */
+    padding: 0 20px; /* gives some space on the sides */
+    border-color: #95C120;
+    color: #95C120;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid white;
-    margin-bottom: 20px;
 }
 
 header h1 {
     font-size: 24px;
+    margin: 0;
 }
 
 nav a {
@@ -35,8 +42,9 @@ nav a:hover {
 }
 
 .image-section img {
-    width: 100%;
-    height: auto;
+    max-width: 100%; /* Adjust as needed */
+    display: block;
+    margin: 0 auto;
 }
 
 .story-section p {
@@ -50,15 +58,31 @@ nav a:hover {
     margin-top: 20px;
 }
 
-button {
-    padding: 10px 20px;
-    background-color: darkgreen;
-    border: none;
-    color: white;
-    cursor: pointer;
+nav a {
+    margin-left: 20px;
 }
 
-button:hover {
-    background-color: green;
+nav a:first-child {
+    margin-left: 0;
 }
 
+.title-section {
+    flex-grow: 2; /* This will allow the title section to take up the remaining space */
+    text-align: center; /* This will center the title text */
+}
+
+.options-section button {
+    background-color: black;
+    color: #95C120; /* neon green text */
+    border: 2px solid #95C120; /* neon green border */
+    padding: 10px 15px; /* add some space around the text */
+    text-decoration: none; /* remove underlines from anchor tags */
+    outline: none; /* remove browser default focus outline */
+    transition: background-color 0.3s, color 0.3s; /* smooth transition for hover effects */
+    cursor: pointer; /* cursor changes to hand icon on hover */
+}
+
+.options-section button:hover {
+    background-color: #95C120; /* neon green background on hover */
+    color: black; /* black text on hover */
+}

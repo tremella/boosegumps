@@ -1,51 +1,48 @@
 const storyParts = {
     start: {
-        text: `Start: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        Tincidunt id aliquet risus feugiat in ante metus dictum. Nulla facilisi nullam vehicula ipsum a. Maecenas ultricies mi eget mauris pharetra et ultrices.
-        Tincidunt praesent semper feugiat nibh sed. Et tortor at risus viverra. Cras tincidunt lobortis feugiat vivamus at augue eget arcu dictum.
-        Nisi lacus sed viverra tellus in. Nisi vitae suscipit tellus mauris. Pharetra pharetra massa massa ultricies mi quis hendrerit dolor magna.
-        Adipiscing elit ut aliquam purus. Bibendum enim facilisis gravida neque convallis a cras. Risus feugiat in ante metus dictum at tempor commodo.
-        Sit amet mattis vulputate enim nulla aliquet porttitor lacus. Eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum.`,
+        text: `The twins arrive at the mansion. Alex impulsively rings the doorbell. The door opens.`,
         image: "assets/cover_house.jpg",
         options: {
             A: {
-                nextPart: "option1",
+                nextPart: "option1a",
                 text: "Enter mansion",
             },
             B: {
-                nextPart: "option2",
-                text: "Run away",
+                nextPart: "option1b",
+                text: "Go home",
             }
         }
     },
-    option1: {
-        text: `Result of Choice A.  Viverra tellus in hac habitasse. Tempor orci eu lobortis elementum nibh. Diam volutpat commodo sed egestas egestas fringilla phasellus.
-        Tempus iaculis urna id volutpat lacus laoreet non. Sem fringilla ut morbi tincidunt augue. Varius sit amet mattis vulputate enim. 
-        Aliquet risus feugiat in ante. Ac turpis egestas sed tempus urna et pharetra. 
-        Ut sem viverra aliquet eget sit amet tellus cras. Semper quis lectus nulla at volutpat diam ut.
-        Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper malesuada proin libero nunc consequat interdum varius.
-        Lacus sed viverra tellus in hac. Porttitor leo a diam sollicitudin tempor id eu nisl. Ornare suspendisse sed nisi lacus sed viverra tellus in hac.
-        Diam sollicitudin tempor id eu. Vel elit scelerisque mauris pellentesque pulvinar. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.`,
+    option1a: {
+        text: `Result of Choice A. You enter the mansion together.`,
         image: "assets/cover_house.jpg",
         options: {
             A: {
-                nextPart: "option1",
-                text: "Enter mansion",
+                nextPart: "option2a",
+                text: "Enter library",
             },
             B: {
-                nextPart: "option2",
-                text: "Run away",
+                nextPart: "option2b",
+                text: "Follow the mysterious sound",
             }
         },
     },
-    option2: {
-        text: `Result of Choice B.  Viverra tellus in hac habitasse. Tempor orci eu lobortis elementum nibh. Diam volutpat commodo sed egestas egestas fringilla phasellus.
-        Tempus iaculis urna id volutpat lacus laoreet non. Sem fringilla ut morbi tincidunt augue. Varius sit amet mattis vulputate enim. 
-        Aliquet risus feugiat in ante. Ac turpis egestas sed tempus urna et pharetra. 
-        Ut sem viverra aliquet eget sit amet tellus cras. Semper quis lectus nulla at volutpat diam ut.
-        Pellentesque sit amet porttitor eget dolor morbi non. Ullamcorper malesuada proin libero nunc consequat interdum varius.
-        Lacus sed viverra tellus in hac. Porttitor leo a diam sollicitudin tempor id eu nisl. Ornare suspendisse sed nisi lacus sed viverra tellus in hac.
-        Diam sollicitudin tempor id eu. Vel elit scelerisque mauris pellentesque pulvinar. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin.`,
+    option1b: {
+        text: `Susie decides they should go home, it's too spooky! But when she turns around, she notices Alex has gone into the house. She rolls her eyes and follows him into the house.`,
+        image: "assets/cover_house.jpg",
+        options: {
+            A: {
+                nextPart: "option1a",
+                text: "Follow Alex (to make sure he's safe)",
+            },
+            B: {
+                nextPart: "option1a",
+                text: "Follow Alex (to yell at him)",
+            }
+        },
+    },
+    option2a: {
+        text: `Wow, it's a library. NERD SHIT.`,
         image: "assets/cover_house.jpg",
         options: {
             A: {

@@ -371,7 +371,7 @@ const storyParts = {
     
     "You have done well, my children. I have always rewarded those loyal to me, and reward you I will". 
 
-    You feel the terrible weight of the god's sudden gaze upon you. Your phone drops from your hand.
+    You feel the terrible weight of the god's sudden gaze upon you. Your phone slips from your hand.
     
     It hisses, "but first, I must feed."`,
     image: "assets/cover_house.jpg",
@@ -383,7 +383,26 @@ const storyParts = {
     }
   },
   cause_chaos: {
-    text: `You throw a molotov cocktail into the room. The cultists scream and run around, trying to put out the flames. You run away, but you can hear sirens in the distance. You've got to get out of here!`,
+    text: `You don't have much time, but you're sure there must be something in this basement you can use to ruin their ritual. You and Alex sneak around the room, and your fist closes around a box of matches. Alex holds up a bottle: it's full of some kind of liquid. In the other hand, he's found some rags.
+    
+    "Petrol!" he whispers. "We start a fire, and then we run, and we don't stop running until we're home."
+    
+    "You're kidding, right?" you whisper back. "We can't just burn down the house!"
+
+    "We can't just let them summon a demon, either." he replies. "We have to do something. If they're smart, they'll have a fire extinguisher. If they're not, they'll just have to run for it. Either way, we ruin their ritual."
+
+    You nod. "Let's do it."`,
+    image: "assets/cover_house.jpg",
+    options: {
+        A: {
+            nextPart: "chaos_continued",
+            text: "burn baby burn!"
+        }
+    }
+  },
+  chaos_continued: {
+    text: `You and Alex start a fire. The cultists panic, and you run. You run until you're out of the front door of the mansion. You've escaped!
+    `,
     image: "assets/cover_house.jpg",
     options: {
         A: {

@@ -84,19 +84,23 @@ const storyParts = {
       image: "assets/cover_house.jpg",
       options: {
           A: {
-              nextPart: "library_kidnap",
+              nextPart: "kidnapped",
               text: "kidnapped!",
           }
       }
   },
   inspect_basement: {
-      text: `You enter the basement. TODO: Finish this path.  `,
+      text: `You enter the basement. The humming is very loud now: you realise it's chanting. Do you creep forward in the dark, or investigate with your torch? `,
       image: "assets/cover_house.jpg",
       options: {
           A: {
-              nextPart: "start",
-              text: "play again",
+              nextPart: "creep_in_dark",
+              text: "play it safe, keep the torch off",
           },
+          B: {
+            nextPart: "use_torch",
+            text: "use torch to investigate",
+        }
       }
   },
   inspect_shadowy_room: {
@@ -105,35 +109,39 @@ const storyParts = {
       options: {
           A: {
               nextPart: "run_from_shadowy",
-              text: "run",
+              text: "run!",
           },
           B: {
               nextPart: "fight_shadowy",
               text: "fight",
-          }
-      }
-  },
-  option5a: {
-      text: `TODO: Finish this path.`,
-      image: "assets/cover_house.jpg",
-      options: {
-          A: {
-              nextPart: "start",
-              text: "play again",
           },
       }
   },
-  option5b: {
-      text: `TODO: Finish this path.  `,
+  creep_in_dark: {
+      text: `You creep forward in the dark. The basement is lit only by the sinister glow of the bottles. You trip - you knock over a bottle! the humming is broken, you are discovered!`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
-              nextPart: "start",
-              text: "play again",
+              nextPart: "sacrifice_time",
+              text: "uh oh.",
           },
       }
   },
-  library_kidnap: {
+  use_torch: {
+      text: `you use your torch to make your way across the room. The bottles glow silently. Creeping to a doorway, you look through. You see dozens of robed figures in a candle-lit room. They're conducting a ritual. Listen or run home?`,
+      image: "assets/cover_house.jpg",
+      options: {
+          A: {
+              nextPart: "listen_in",
+              text: "eavesdrop",
+          },
+          B: {
+              nextPart: "flee_and_fail",
+              text: "go home!",
+          },
+      }
+  },
+  kidnapped: {
       text: `you've been kidnapped! you wake up in a dank, drippy basement. This seems bad. `,
       image: "assets/cover_house.jpg",
       options: {
@@ -142,6 +150,30 @@ const storyParts = {
               text: "play again",
           },
       }
+  },
+  flee_and_fail: {
+      text: `You whisper to Alex that you've had enough- you're going home. Silence - you turn and he's not there. Suddenly, gloved hands close over your mouth and everything goes black. You've been kidnapped!`,
+      image: "assets/cover_house.jpg",
+      options: {
+          A: {
+              nextPart: "kidnapped",
+              text: "uh oh.",
+          },
+      }
+  },
+  listen_in: {
+    text: `You listen in. You hear the cultists chanting. They're summoning a demon! You're terrified, but you've got to do something`,
+    image: "assets/cover_house.jpg",
+    options: {
+        A: {
+            nextPart: "record_ritual",
+            text: "record the ritual",
+        },
+        B: {
+            nextPart: "commit_arson",
+            text: "molotov time, baby!",
+        },
+    }
   }
   // ... continue structuring for all the nodes.
 };

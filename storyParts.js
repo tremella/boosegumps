@@ -18,7 +18,7 @@ const storyParts = {
       image: "assets/cover_house.jpg",
       options: {
           A: {
-              nextPart: "option2a",
+              nextPart: "enter_library",
               text: "Enter library",
           },
           B: {
@@ -41,7 +41,7 @@ const storyParts = {
           }
       },
   },
-  option2a: {
+  enter_library: {
       text: `You find yourself in an enormous library. Read book or examine binding?`,
       image: "assets/cover_house.jpg",
       options: {
@@ -149,5 +149,19 @@ const storyParts = {
           }
       }
   },
+  library_kidnap: {
+      text: `you've been kidnapped! you wake up in a dank, drippy basement. This seems bad. `,
+      image: "assets/cover_house.jpg",
+      options: {
+          A: {
+              nextPart: "start",
+              text: "play again",
+          },
+          B: {
+              nextPart: "start",
+              text: "play again",
+          }
+      }
+  }
   // ... continue structuring for all the nodes.
 };

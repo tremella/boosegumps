@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: black;    
+    background-color: black;
     padding: 20px;
     color: #95C120;
 }
@@ -8,33 +8,40 @@ body {
 .container {
     max-width: 800px;
     margin: 0 auto;
-    padding: 10px;
+    padding: 10px 20px;
 }
 
 header {
-    display: flex;        
+    display: flex;
+    margin: 0 auto;
     margin-bottom: 20px;
-    border: 1px solid white;    
+    position: relative;
+    border: 1px solid white;
     border-radius: 2px;
-    width: 100%; /* ensures full width */
-    box-sizing: border-box; /* makes sure padding and border are included in width */
-    padding: 0 20px; /* gives some space on the sides */
+    padding: 5px 20px; /* gives some space on the sides */
     border-color: #95C120;
     color: #95C120;
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 header h1 {
-    font-size: 24px;
+    font-size:24px;
     margin: 0;
+    text-align: center;
+    flex: 1
+}
+
+nav {
+    position: absolute;
+    top: 50%;
+    right: 20px;  /* Push it to the far right, while still keeping some space from the border */
+    transform: translateY(-50%);  /* Vertically center it */
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
 }
 
 nav a:hover {

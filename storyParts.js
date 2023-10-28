@@ -1,26 +1,45 @@
 const storyParts = {
   start: {
-      text: `You're pedalling your bike, feeling the cool wind against your face. Up ahead, the old mansion stands tall and foreboding. Its darkened windows seem to stare back at you, and the twisted trees surrounding it add to its eerie charm. Every brick and shingle tells a story of age and mystery. Beside you, Alex, always the daredevil, throws you a challenging glance.
-
-      "Bet you wouldn't ring the doorbell," he teases.
-
-      "Are you serious?" you snap, unable to pull your gaze from the mansion.
-
-      Without waiting for your response, Alex speeds up, his bike coming to a halt right in front of the mansion's entrance. He hops off, marches up the steps, and impulsively presses the doorbell. The chime echoes eerily, and after a moment, the mansion's door creaks open to reveal a dimly lit hallway. Alex turns and looks back at you, and raises his eyebrows. "Well? You game?".
+      text: `It's the end of Autumn, and you and your twin brother Alex are riding your bikes home from school. The sun is setting, casting long shadows across the road. You're pedalling your bike, feeling the cool wind against your face. 
       
-      Do you follow Alex into the abandoned mansion? Or do you call it quits and head home?
-      `,
+      Up ahead, an old mansion stands tall and foreboding. Its darkened windows seem to stare back at you, and the twisted trees surrounding it add to its eerie charm. For as long as you can remember, it's been the subject of countless rumours and ghost stories. But you've never seen anyone go in or out of it. It's been abandoned for years, and you've always wondered what secrets it holds.
+
+      Any other day, you'd have ignored it and gone home. But today, something about the mansion seems different. The air feels charged, almost electric, and you can't shake off the feeling that something is about to happen. Almost against your will, you find yourself slowing down, your bike coming to a stop. Alex stops beside you, his curious gaze mirroring your own.`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
-              nextPart: "enter_together",
-              text: "Enter mansion",
+              nextPart: "the_dare",
+              text: "continue",
           },
-          B: {
-              nextPart: "go_home",
-              text: "Go home",
-          }
       }
+  },
+  the_dare: {
+    text: `He throws you a challenging glance.
+
+    "Bet you wouldn't ring the doorbell," he teases.
+
+    "Oh, grow up" you snap, unable to pull your gaze from the mansion. 
+
+    Without waiting for your response, Alex speeds up, his bike coming to a halt right in front of the mansion's entrance. He hops off, marches up the steps, and impulsively presses the doorbell. The chime echoes eerily, and after a tense and silent minute... nothing happens. 
+    
+    Alex turns to you, a smug grin on his face. "See? Nothing to be afraid of. I bet it's not even locked." 
+
+    He reaches for the door handle, and it swings open with a loud creak. You stare at him, wide-eyed. "Are you crazy? We can't just go in there!"
+
+    "Who would know? Besides, it's not like we're stealing anything. We're just looking around. Now, are you coming or not?"
+    
+    Do you follow Alex into the abandoned mansion? Or do you call it quits and head home?`,
+    image: "assets/cover_house.jpg",
+      options: {
+        A: {
+            nextPart: "enter_together",
+            text: "Enter mansion",
+        },
+        B: {
+            nextPart: "go_home",
+            text: "Go home",
+        }
+    }
   },
   enter_together: {
       text: `As you step through the grand entrance, the first thing you notice is the dim lighting. The mansion's interior is illuminated by ornate chandeliers, their candles casting flickering shadows on the walls. The air is thick with a mix of dust and age, giving the place a feeling that time has forgotten it.
@@ -54,7 +73,9 @@ const storyParts = {
       
       "Suit yourself! I'm going in!". 
       
-      You keep walking, hoping to call his bluff, but when you glance back he's nowhere to be seen. Rolling your eyes, you wait a few seconds... then a few more. But he doesn't reappear.`,
+      You keep walking, hoping to call his bluff, but when you glance back he's nowhere to be seen. Rolling your eyes, you wait a few seconds... then a few more. But he doesn't reappear. 
+      
+      Ugh. You know you're going to regret this..."`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -68,7 +89,7 @@ const storyParts = {
       },
   },
   enter_library: {
-      text: `Choosing the safer option, you say, "Let's check out the library. Maybe we can find some answers there."
+      text: `Choosing the safer option, you say, "Let's check out the library."
 
       You and Alex head towards the door and step into the vast library. Rows upon rows of ancient books line the shelves, their spines worn and faded from time. The room is warmly lit by a fireplace, casting dancing shadows on the walls. But what immediately catches your attention is a single book displayed on a pedestal in the centre of the room.
       

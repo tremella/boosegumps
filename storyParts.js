@@ -303,11 +303,11 @@ const storyParts = {
   kidnapped: {
       text: `You awake to the chill of stone against your back, and the sonorous drone of a dozen voices - maybe more. You glimpse robed figures surrounding you in a well lit room. 
       
-      "Our Dark Father, we offer unto you an innocent soul, that you may grant us your blessing," the robed figured chant. "We offer unto you this sacrifice, that you may grant us your power." 
+      "Our Dark Brother, we offer unto you an innocent soul, that you may grant us your power," the robed figured chant. "We offer unto you this sacrifice, that you may grant us your presence." 
       
       You close your eyes barely and will yourself to breathe slowly and deeply, as if asleep. 
 
-      "In the name of the Serpent, the Dragon, and the Beast Below, we offer unto you this sacrifice that you may rise and bring us our dues"
+      "In the name of the Serpent, the Tempter, and the Beast Below, we offer unto you this sacrifice that you may rise and bring us our dues."
 
       TODO: finish.
       `,
@@ -320,13 +320,13 @@ const storyParts = {
       }
   },
   rescue: {
-    text: `Alex seems to have a plan. He knocks over a couple of braziers filled with hot coals and rushes forward. Some of the coals land on the cultists robes which catch fire! In the ensuing chaos, he deftly works your bindings free.
+    text: `Alex seems to have a plan. He knocks over a couple of braziers filled with hot coals and rushes forward. Some of the coals land on the cultist's robes, which catch fire! In the ensuing chaos, he deftly works your bindings free.
     
     "We have to go.", he whispers.
     
     "Let's get out of here before they realise."
 
-    You run out of the room, before the cultists realise what's going on. Then keep running until you're out of the front door of the mansion. You've escaped!
+    You run out of the room, before the cultists realise what's going on. Then you keep running until you're out of the front door of the mansion. You've escaped!
     `,
     image: "assets/cover_house.jpg",
     options: {
@@ -347,7 +347,9 @@ const storyParts = {
       }
   },
   listen_in: {
-    text: `You listen in. You hear the cultists chanting. They're summoning a demon! You're not sure if demons exist, but you really don't want to find out. You've got to do something! Do you record the ritual so you can report them to the police, or do you cause some chaos?`,
+    text: `You listen in. You hear the cultists chanting. They're summoning a demon! You're not sure if demons exist, but you really don't want to find out. 
+    
+    You've got to do something! Do you record the ritual so you can report them to the police, or do you cause some chaos?`,
     image: "assets/cover_house.jpg",
     options: {
         A: {
@@ -355,9 +357,29 @@ const storyParts = {
             text: "record the ritual",
         },
         B: {
-            nextPart: "commit_arson",
-            text: "molotov time, baby!",
+            nextPart: "cause_chaos",
+            text: "cause some chaos!",
         },
+    }
+  },
+  record_ritual: {
+    text: `You record the ritual. You've got evidence! You can report them to the police and get them arrested. You're a hero!`,
+    image: "assets/cover_house.jpg",
+    options: {
+        A: {
+            nextPart: "start",
+            text: "THE END."
+        }
+    }
+  },
+  cause_chaos: {
+    text: `You throw a molotov cocktail into the room. The cultists scream and run around, trying to put out the flames. You run away, but you can hear sirens in the distance. You've got to get out of here!`,
+    image: "assets/cover_house.jpg",
+    options: {
+        A: {
+            nextPart: "start",
+            text: "THE END."
+        }
     }
   }
   // ... continue structuring for all the nodes.

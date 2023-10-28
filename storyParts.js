@@ -42,17 +42,17 @@ const storyParts = {
     }
   },
   enter_together: {
-      text: `As you step through the grand entrance, the first thing you notice is the dim lighting. The mansion's interior is illuminated by ornate chandeliers, their candles casting flickering shadows on the walls. The air is thick with a mix of dust and age, giving the place a feeling that time has forgotten it.
+      text: `As you step through the grand entrance, the first thing you notice is the dim lighting. The mansion's interior is illuminated by ornate chandeliers, their candles casting flickering shadows on the walls. The air is thick with a mix of dust and age.
 
       The main hall is expansive, with a grand staircase leading to the upper floors. On either side, there are doors leading to various rooms, their dark wooden frames intricately carved with designs that seem to move if you stare too long.
       
       The floor, made of polished marble, reflects the candlelight, and the walls are adorned with faded portraits of people who must've lived here ages ago. Their stern expressions make you uneasy, and you can't shake off the feeling that they're watching you.
       
-      As you're taking in the surroundings, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from a corridor to your left. There's something both enticing and unnerving about it.
+      As you're taking in the surroundings, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from a corridor to your left.
       
       To your right, there's a shadowed door revealing a glimpse of a vast library. Rows upon rows of shelves filled with ancient books, their spines worn out from time. A soft glow emanates from the room, likely from a fireplace, casting a warm, inviting light.
       
-      Torn between the two, you hesitate. Do you follow the mysterious humming? Or do you seek refuge in the library, hoping to find answers among the old tomes?
+      Torn between the two, you hesitate. Do you follow the mysterious humming? Or do you investigate the library, hoping to find answers among the old tomes?
       `,
       image: "assets/foyer.jpg",
       options: {

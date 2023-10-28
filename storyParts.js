@@ -31,11 +31,11 @@ const storyParts = {
       
       As you're taking in the surroundings, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from a corridor to your left. There's something both enticing and unnerving about it.
       
-      To your right, there's a slightly ajar door revealing a glimpse of a vast library. Rows upon rows of shelves filled with ancient books, their spines worn out from time. A soft glow emanates from the room, likely from a fireplace, casting a warm, inviting light.
+      To your right, there's a shadowed door revealing a glimpse of a vast library. Rows upon rows of shelves filled with ancient books, their spines worn out from time. A soft glow emanates from the room, likely from a fireplace, casting a warm, inviting light.
       
-      Torn between the two, you hesitate. Do you follow the mysterious humming, drawn to its haunting tune? Or do you seek refuge in the library, hoping to find answers among the old tomes?
+      Torn between the two, you hesitate. Do you follow the mysterious humming? Or do you seek refuge in the library, hoping to find answers among the old tomes?
       `,
-      image: "assets/cover_house.jpg",
+      image: "assets/foyer.jpg",
       options: {
           A: {
               nextPart: "enter_library",
@@ -76,7 +76,7 @@ const storyParts = {
       
       Now faced with another decision, do you choose to read the glowing passage out loud, hoping it provides answers? Or do you investigate the strange material of the book's binding, looking for clues about its origins?
       `,
-      image: "assets/cover_house.jpg",
+      image: "assets/tome.jpg",
       options: {
           A: {
               nextPart: "read_contents",
@@ -97,15 +97,15 @@ const storyParts = {
       
       You hesitate for a moment, glancing towards the inviting library. "I don't know... The library seems safer."
       
-      Alex grins, that adventurous spark in his eyes. "Come on, Susie. Where's your sense of adventure? Besides, it might just be a radio or something."
+      Alex grins, a spark in his eyes. "Come on, Susie. Where's your sense of adventure? Besides, it might just be the radio or something."
       
       You roll your eyes but can't help but smile. "Alright, alright. Let's follow the humming. But if we get into trouble, I'm blaming you."
       
-      Alex chuckles. "Deal."
+      Alex winks. "Deal."
       
       With that, the two of you cautiously make your way towards the source of the humming, the sound growing louder with each step.
       `,
-      image: "assets/cover_house.jpg",
+      image: "assets/foyer.jpg",
       options: {
           A: {
               nextPart: "hum_or_shadow",
@@ -156,7 +156,7 @@ const storyParts = {
       
       The mansion, with its countless mysteries and shadows, now has a new, malevolent denizen. And within you, where Susie once stood, there remains only an endless, insatiable hunger.
       `,
-      image: "assets/cover_house.jpg",
+      image: "assets/tome.jpg",
       options: {
           A: {
               nextPart: "start",
@@ -177,7 +177,7 @@ const storyParts = {
       
       The last thing you remember is the faint scent of old books and the cold touch of the leather-bound tome.
       `,
-      image: "assets/cover_house.jpg",
+      image: "assets/tome.jpg",
       options: {
           A: {
               nextPart: "kidnapped",

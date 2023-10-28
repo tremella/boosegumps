@@ -6,9 +6,9 @@ const storyParts = {
 
       "Are you serious?" you snap, unable to pull your gaze from the mansion.
 
-      Without waiting for your response, Alex speeds up, his bike coming to a halt right in front of the mansion's entrance. He hops off, marches up the steps, and impulsively presses the doorbell. The chime echoes eerily, and after a moment, the mansion's door creaks open to reveal a dimly lit hallway. Alex, curiosity getting the better of him, takes a step inside. You're left at the gate, heart racing.
+      Without waiting for your response, Alex speeds up, his bike coming to a halt right in front of the mansion's entrance. He hops off, marches up the steps, and impulsively presses the doorbell. The chime echoes eerily, and after a moment, the mansion's door creaks open to reveal a dimly lit hallway. Alex turns and looks back at you, and raises his eyebrows. "Well? You game?".
       
-      Do you follow Alex into the mysterious mansion, or do you turn around and head home, leaving him to his adventure?
+      Do you follow Alex into the abandoned mansion? Or do you call it quits and head home?
       `,
       image: "assets/cover_house.jpg",
       options: {
@@ -48,7 +48,13 @@ const storyParts = {
       },
   },
   go_home: {
-      text: `Deciding this is way too spooky, you think it's best to turn around and go home. But as you do, you notice Alex has already ventured into the house, the door slowly closing behind him. Rolling your eyes, you realise you can't leave him alone in there. With a sigh, you follow him into the mansion.`,
+      text: `"Nope, no way. This place could fall apart at any moment," you say, shaking your head. "Besides, it's getting late. We should head home." 
+      
+      You turn and start walking back to your bike, but Alex calls back, 
+      
+      "Suit yourself! I'm going in!". 
+      
+      You keep walking, hoping to call his bluff, but when you glance back he's nowhere to be seen. Rolling your eyes, you wait a few seconds... then a few more. But he doesn't reappear.`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -231,13 +237,13 @@ const storyParts = {
       }
   },
   fight_shadowy: {
-    text: `With a burst of courage, you shout, "We fight!" and brace yourself.
+    text: `With a burst of courage, you ball your fists and swing at the shadow and... miss.
 
     The shadow surges forward, its formless shape swirling and twisting. You try to fend it off, swinging and kicking at it, but it's like battling smoke. The more you move, the more it seems to envelop you.
     
     Suddenly, you feel a coldness seep into you, starting from your feet and rising. You glance down in horror to see your own shadow merging with the dark entity. It's consuming you, pulling you in. The coldness spreads, numbing your senses.
     
-    "Alex!" you cry out, reaching for your brother. But your voice is distant, echoing as if you're at the bottom of a deep well.
+    "Alex!" you call out, reaching for your brother. He's frozen in place, petrified. But your voice is distant, echoing as if you're at the bottom of a deep well.
     
     The world fades to black, the cold deepening, and you feel yourself sinking, the weight of the darkness pressing down.
     
@@ -254,7 +260,7 @@ const storyParts = {
   run_from_shadowy: {
     text: `Heart pounding, you shout, "Run!" and bolt towards the door, with Alex right behind you.
 
-    As you dash down the corridor, the haunting hum now drowned by your own frantic heartbeat, a chilling scream pierces the air. Glancing over your shoulder, you see the shadow enveloping Alex. It's pulling him in, his form merging with the darkness.
+    As you dash down the corridor, the humming now drowned by your own frantic heartbeat, an awful scream pierces the air. Glancing over your shoulder, you see the shadow enveloping Alex. It's pulling him in, his form merging with the darkness.
     
     "No!" you cry, reaching out for him. But the distance between you grows, and in a moment, Alex is gone, consumed entirely. The shadow, now larger and even more menacing, continues its relentless pursuit.
     
@@ -271,7 +277,7 @@ const storyParts = {
     }
   },
   creep_in_dark: {
-      text: `You creep forward in the dark. The basement is lit only by the sinister glow of the bottles. You trip - you knock over a bottle! the humming is broken, you are discovered!`,
+      text: `You creep forward in the dark. The basement is lit only by the glow of the next room. You trip - you knock over a bottle! the humming is broken, and you scramble to hide yourself beneath a workbench, but it's too late - a hand grabs you and you're dragged into the next room.`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -281,7 +287,7 @@ const storyParts = {
       }
   },
   use_torch: {
-      text: `you use your torch to make your way across the room. The bottles glow silently. Creeping to a doorway, you look through. You see dozens of robed figures in a candle-lit room. They're conducting a ritual. Listen or run home?`,
+      text: `You use your torch to make your way across the room. Creeping to a doorway, you look through. You see dozens of robed figures in a candle-lit room. They're conducting a ritual. Listen or run home?`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -295,7 +301,16 @@ const storyParts = {
       }
   },
   kidnapped: {
-      text: `you've been kidnapped! you wake up in a dank, drippy basement. This seems bad. `,
+      text: `You awake to the chill of stone against your back, and the sonorous drone of a dozen voices - maybe more. You glimpse robed figures surrounding you in a well lit room. 
+      
+      "Our Dark Father, we offer unto you an innocent soul, that you may grant us your blessing," the robed figured chant. "We offer unto you this sacrifice, that you may grant us your power." 
+      
+      You close your eyes barely and will yourself to breathe slowly and deeply, as if asleep. 
+
+      "In the name of the Serpent, the Dragon, and the Beast Below, we offer unto you this sacrifice that you may rise and bring us our dues"
+
+      TODO: finish.
+      `,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -315,7 +330,7 @@ const storyParts = {
       }
   },
   listen_in: {
-    text: `You listen in. You hear the cultists chanting. They're summoning a demon! You're terrified, but you've got to do something`,
+    text: `You listen in. You hear the cultists chanting. They're summoning a demon! You're not sure if demons exist, but you really don't want to find out. You've got to do something! Do you record the ritual so you can report them to the police, or do you cause some chaos?`,
     image: "assets/cover_house.jpg",
     options: {
         A: {

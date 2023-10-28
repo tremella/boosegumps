@@ -309,7 +309,7 @@ const storyParts = {
 
       "In the name of the Serpent, the Dragon, and the Beast Below, we offer unto you this sacrifice that you may rise and bring us our dues"
 
-      TODO: finish.
+      You ignore their inane chanting. It's so unscientific. But wait - you notice one of the cultists is much smaller than the others. You look at him carefully and the hooded face quickly lifts and ... winks? Alex!
       `,
       image: "assets/cover_house.jpg",
       options: {

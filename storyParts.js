@@ -42,26 +42,25 @@ const storyParts = {
     }
   },
   enter_together: {
-      text: `As you step through the grand entrance, the first thing you notice is the dim lighting. The mansion's interior is illuminated by ornate chandeliers, their candles casting flickering shadows on the walls. The air is thick with a mix of dust and age, giving the place a feeling that time has forgotten it.
+      text: `As you step through the grand entrance, the first thing you notice is the smell. The air is thick with dust, but there's a strange metallic taste to the air you can't identify. In the dim light, you can barely make out the details of the foyer, but you can tell it must have been beautiful, once. 
 
-      The main hall is expansive, with a grand staircase leading to the upper floors. On either side, there are doors leading to various rooms, their dark wooden frames intricately carved with designs that seem to move if you stare too long.
+      The main hall is expansive, with a grand ruin of staircase leading to the upper floors. On either side, there are doors leading to various rooms, but one catches your eye - it's ajar, with a faint glow emanating from within. 
+
+      You turn to Alex, who's looking around with a mixture of excitement and apprehension. "Alex", you say. "If this place is abandoned, then why is there a light on in that room?"
+
+      He isn't listening to you. Instead, he's staring past the staircase, deeper into the foyer, his eyes narrowing. "Can you hear that?" he whispers, his voice barely audible. "It sounds like... humming."
       
-      The floor, made of polished marble, reflects the candlelight, and the walls are adorned with faded portraits of people who must've lived here ages ago. Their stern expressions make you uneasy, and you can't shake off the feeling that they're watching you.
+      As you pause to listen, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from a corridor to your left. There's something both enticing and unnerving about it.
       
-      As you're taking in the surroundings, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from a corridor to your left. There's something both enticing and unnerving about it.
-      
-      To your right, there's a shadowed door revealing a glimpse of a vast library. Rows upon rows of shelves filled with ancient books, their spines worn out from time. A soft glow emanates from the room, likely from a fireplace, casting a warm, inviting light.
-      
-      Torn between the two, you hesitate. Do you follow the mysterious humming? Or do you seek refuge in the library, hoping to find answers among the old tomes?
-      `,
+      Torn between the two, you hesitate. Do you follow the mysterious humming? Or do you investigate the lit room?`,
       image: "assets/foyer.jpg",
       options: {
           A: {
               nextPart: "enter_library",
-              text: "Enter library",
+              text: "Investigate the room",
           },
           B: {
-              nextPart: "follow_hum",
+              nextPart: "hum_or_shadow",
               text: "Follow the mysterious hum",
           }
       },
@@ -89,13 +88,13 @@ const storyParts = {
       },
   },
   enter_library: {
-      text: `Choosing the safer option, you say, "Let's check out the library."
+      text: `"If someone's here, we'd better figure that out first", you reason. "Let's check out that room."
 
-      You and Alex head towards the door and step into the vast library. Rows upon rows of ancient books line the shelves, their spines worn and faded from time. The room is warmly lit by a fireplace, casting dancing shadows on the walls. But what immediately catches your attention is a single book displayed on a pedestal in the centre of the room.
+      You and Alex head towards the door and step into a small library. The room is wildly cluttered, and books line the shelves, their spines worn and faded from time. The room is warmly lit by a fireplace, casting dancing shadows on the walls. But what immediately catches your attention is a single book displayed on a pedestal in the centre of the room.
       
-      Approaching it, you see that the book is ancient, its pages yellowed and fragile. It's open to a particular page, and a passage is highlighted with a strange, glowing ink. The book's binding, however, is even more intriguing. It's made of an unfamiliar material, dark and leathery, with an odd texture that seems almost... alive.
+      Approaching it, you see that the book is ancient, its pages yellowed and fragile. It's open to a particular page, and a passage is highlighted with a strange, glowing ink. The book's binding, however, is even more intriguing. It's made of an unfamiliar material, dark and leathery, with an odd texture that seems almost... alive. Familiar, somehow.
       
-      Alex leans in closer, squinting at the highlighted passage. "This looks important. Should we read it?"
+      Alex leans in closer, squinting at the highlighted passage. "?"
       
       You hesitate, torn between the mysterious passage and the book's peculiar binding. "I don't know... Something about that binding gives me the creeps."
       
@@ -115,47 +114,21 @@ const storyParts = {
           }
       }
   },
-  follow_hum: {
-      text: `As you stand there, taking in the sights and sounds, Alex nudges you, pointing towards the corridor from where the humming is coming. "Hey, you hear that?" he whispers, his voice filled with a mix of excitement and apprehension.
-
-      "Yeah," you reply, listening intently. "It's... strange, isn't it?"
-      
-      Alex nods. "Wanna check it out? Could be a clue about this place."
-      
-      You hesitate for a moment, glancing towards the inviting library. "I don't know... The library seems safer."
-      
-      Alex grins, a spark in his eyes. "Come on, Susie. Where's your sense of adventure? Besides, it might just be the radio or something."
-      
-      You roll your eyes but can't help but smile. "Alright, alright. Let's follow the humming. But if we get into trouble, I'm blaming you."
-      
-      Alex winks. "Deal."
-      
-      With that, the two of you cautiously make your way towards the source of the humming, the sound growing louder with each step.
-      `,
-      image: "assets/foyer.jpg",
-      options: {
-          A: {
-              nextPart: "hum_or_shadow",
-              text: "Keep going...",
-          },
-      }
-  },
   hum_or_shadow: {
     text: `
-    As you and Alex continue down the corridor, the humming becomes more pronounced, echoing through the cold, draughty halls. But just as you're getting lost in its hypnotic rhythm, a swift movement catches your eye. A shadow, fleeting and elusive, darts into a room just off the corridor.
+
+      "You're curious about the source of the light, and a little cold, but the hum is strangely irresistible. As one, you and Alex make your way deeper into the house, the sound growing louder with each step.
+
+      As you and Alex continue down the corridor, the humming becomes more pronounced, echoing through the cold, draughty halls. But just as you're getting lost in its hypnotic rhythm, a swift movement catches your eye. A shadow, fleeting and elusive, darts into a room just off the corridor.
       
       Alex, noticing your distraction, follows your gaze. "Did you see that?" he asks, a hint of trepidation in his voice.
       
       You nod, heart racing. "Yeah. A shadow... or something. It went into that room."
       
-      He glances at the door, then back at you, torn. "What do you think? Should we check it out, or stick to the humming?"
+      He glances at the door, then back at you, torn. "What do you think? Should we check it out?"
       
-      You pause, weighing the options. On one hand, the shadow could be a clue, or perhaps someone who can help. On the other, the humming has an almost magnetic pull, beckoning you forward.
-      
-      "It might be nothing," you muse, "but what if it's important? Then again, the humming..."
-      
-      "Your call, Susie."
-      
+      You pause, weighing the options. On one hand, the shadow doesn't seem like something you can afford to ignore. On the other, the humming has an almost magnetic pull, beckoning you forward.
+                  
       Now faced with a decision, do you choose to investigate the mysterious shadow, or do you continue on, drawn by the humming?
     `,
     image: "assets/cover_house.jpg",
@@ -166,14 +139,14 @@ const storyParts = {
           },
           B: {
               nextPart: "inspect_shadowy_room",
-              text: "Shadowy room",
+              text: "Investigate shadowy room",
           }
       }
   },
   read_contents: {
       text: `Taking a deep breath, you start reciting the highlighted words. As you do, the room begins to grow colder, and an oppressive weight settles around you. The words don’t just echo in your ears, but in your very soul. A malevolent force, ancient and powerful, seeps into you from the book.
 
-      Your vision blurs and you feel yourself being pushed to the back of your own mind, a dark presence taking over. A demonic entity, awakened by the words you read, now possesses your body. An insatiable hunger consumes every fiber of your being.
+      Your vision blurs and you feel yourself being pushed to the back of your own mind, a dark presence taking over. An entity, awakened by the words you read, now possesses your body. An insatiable hunger consumes every fiber of your being.
       
       Your mouth stretches impossibly wide, revealing countless rows of sharp, jagged teeth. Alex, horror evident in his eyes, stammers, "Susie? What... What have you done?"
       
@@ -194,7 +167,7 @@ const storyParts = {
   examine_binding: {
       text: `You say, "Let's take a closer look at the binding first."
 
-      You reach out and gently touch the book's cover. The texture is unlike anything you've felt before, rough yet oddly familiar. The chilling realisation hits you: it's human skin.
+      You reach out and gently touch the book's cover. The texture is unlike anything you've felt on a book before, yet it's oddly familiar. Faintly spotted, just lightly. Your eyes drift to your own lightly freckled arm and The chilling realisation hits you: it's human skin.
       
       Your heart races, and a cold dread settles in your stomach. "Alex," you whisper, pulling your hand back as if burned, "This... this is skin."
       
@@ -298,7 +271,11 @@ const storyParts = {
     }
   },
   creep_in_dark: {
-      text: `You creep forward in the dark. The basement is lit only by the glow of the next room. You trip - you knock over a bottle! the humming is broken, and you scramble to hide yourself beneath a workbench, but it's too late - a hand grabs you and you're dragged into the next room.`,
+      text: `You creep forward in the dark. The basement is lit only by the glow of the next room. 
+
+      Alex is a little ways behind you, and you can hear him breathing heavily. You're not sure if he's scared or excited. For your part, you're definitely scared.
+      
+      Suddenly, you trip - you knock over a bottle! It shatters and instantly, the humming is broken, and you scramble to hide yourself beneath a workbench, but it's too late - a hand grabs you and you're dragged into the next room.`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -322,15 +299,17 @@ const storyParts = {
       }
   },
   kidnapped: {
-      text: `You awake to the chill of stone against your back, and the sonorous drone of a dozen voices - maybe more. You glimpse robed figures surrounding you in a well lit room. 
+      text: `You awake to the chill of stone against your back, and the sonorous drone of a dozen voices - maybe more. You glimpse robed figures surrounding you in a well lit room. Enormous braziers line the walls, casting flickering shadows.
       
-      "Our Dark Brother, we offer unto you an innocent soul, that you may grant us your power," the robed figured chant. "We offer unto you this sacrifice, that you may grant us your presence." 
+      "Our Dark Brother, we offer unto you an innocent soul, that you may grant us your power," the robed figures chant. "We offer unto you this sacrifice, that you may grant us your presence." 
       
-      You close your eyes barely and will yourself to breathe slowly and deeply, as if asleep. 
+      You're tied to a stone altar, and a robed figure approaches you with a knife. You're wide awake now, but gripped with fear. You can't speak. You can't move. You can't scream. 
 
-      "In the name of the Serpent, the Tempter, and the Beast Below, we offer unto you this sacrifice that you may rise and bring us our dues."
+      "In the name of the Serpent, the Tempter, and the Beast Below, we offer unto you this sacrifice that you may rise and bring us our dues" the figure intones.
 
-      You ignore their inane chanting. It's so unscientific. But wait - you notice one of the cultists is much smaller than the others. You look at him carefully and the hooded face quickly lifts and ... winks? Alex!
+      This is a nightmare. You're surrounded and totally powerless. You can see your own petrified face in the reflection of the knife.
+      
+      But wait - you notice one of the cultists is much smaller than the others. You look at him carefully and the hooded face quickly lifts and ... winks? Alex!
       `,
       image: "assets/cover_house.jpg",
       options: {
@@ -341,11 +320,9 @@ const storyParts = {
       }
   },
   rescue: {
-    text: `Alex seems to have a plan. He knocks over a couple of braziers filled with hot coals and rushes forward. Some of the coals land on the cultist's robes, which catch fire! In the ensuing chaos, he deftly works your bindings free.
+    text: `Alex seems to have a plan. He knocks over a couple of braziers filled with hot coals and rushes forward. Some of the coals land on the cultist's robes, which catch fire! In the ensuing chaos, he deftly works your bindings free. Amidst the yelling, he's the least of their worries.
     
-    "We have to go.", he whispers.
-    
-    "Let's get out of here before they realise."
+    "We have to go.", he whispers. "Let's get out of here before they realise."
 
     You run out of the room, before the cultists realise what's going on. Then you keep running until you're out of the front door of the mansion. You've escaped!
     `,

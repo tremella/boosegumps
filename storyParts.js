@@ -77,10 +77,6 @@ const storyParts = {
               nextPart: "start",
               text: "play again",
           },
-          B: {
-              nextPart: "start",
-              text: "play again",
-          }
       }
   },
   examine_binding: {
@@ -101,10 +97,6 @@ const storyParts = {
               nextPart: "start",
               text: "play again",
           },
-          B: {
-              nextPart: "start",
-              text: "play again",
-          }
       }
   },
   inspect_shadowy_room: {
@@ -129,10 +121,6 @@ const storyParts = {
               nextPart: "start",
               text: "play again",
           },
-          B: {
-              nextPart: "start",
-              text: "play again",
-          }
       }
   },
   option5b: {
@@ -143,10 +131,6 @@ const storyParts = {
               nextPart: "start",
               text: "play again",
           },
-          B: {
-              nextPart: "start",
-              text: "play again",
-          }
       }
   },
   library_kidnap: {
@@ -157,10 +141,6 @@ const storyParts = {
               nextPart: "start",
               text: "play again",
           },
-          B: {
-              nextPart: "start",
-              text: "play again",
-          }
       }
   }
   // ... continue structuring for all the nodes.

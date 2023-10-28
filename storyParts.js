@@ -275,7 +275,7 @@ const storyParts = {
       image: "assets/cover_house.jpg",
       options: {
           A: {
-              nextPart: "sacrifice_time",
+              nextPart: "kidnapped",
               text: "uh oh.",
           },
       }
@@ -295,14 +295,31 @@ const storyParts = {
       }
   },
   kidnapped: {
-      text: `you've been kidnapped! you wake up in a dank, drippy basement. This seems bad. `,
+      text: `you've been kidnapped! you wake up in the middle of a circle of cultists chanting. That was the humming sound! This seems bad. You notice one of the cultists is much smaller than the others. You look at him carefully and the hooded face quickly lifts and ... winks? Alex!`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
-              nextPart: "start",
-              text: "play again",
+              nextPart: "rescue",
+              text: "What will Alex do?",
           },
       }
+  },
+  rescue: {
+    text: `Alex seems to have a plan. He knocks over a couple of braziers filled with hot coals and rushes forward. Some of the coals land on the cultists robes which catch fire! In the ensuing chaos, he deftly works your bindings free.
+    
+    "We have to go.", he whispers.
+    
+    "Let's get out of here before they realise."
+
+    You run out of the room, before the cultists realise what's going on. Then keep running until you're out of the front door of the mansion. You've escaped!
+    `,
+    image: "assets/cover_house.jpg",
+    options: {
+        A: {
+            nextPart: "start",
+            text: "THE END."
+        }
+    }
   },
   flee_and_fail: {
       text: `You whisper to Alex that you've had enough- you're going home. Silence - you turn and he's not there. Suddenly, gloved hands close over your mouth and everything goes black. You've been kidnapped!`,

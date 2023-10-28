@@ -3,6 +3,9 @@
 function renderStoryPart(part) {
     document.getElementById("story-text").innerHTML = part.text;
     document.getElementById("story-image").src = part.image;
+    // Replace \n in text with <br> in HTML.
+    document.querySelector('.story-section p').innerHTML = part.text.replace(/\n/g, '<br>');
+
     const optionsSection = document.querySelector('.options-section');
     
     // Clear current options

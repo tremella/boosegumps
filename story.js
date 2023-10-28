@@ -58,8 +58,6 @@ const storyParts = {
     // ... continue structuring for all the nodes.
 };
 
-let currentPart = storyParts.start; // Start with the initial story part
-
 // Function to render a part of the story
 function renderStoryPart(part) {
     document.getElementById("story-text").innerHTML = part.text;
@@ -99,9 +97,11 @@ function restartStory() {
     renderStoryPart(currentPart);
 }
 
+
+// On first load
+let currentPart = storyParts.start; // Start with the initial story part
+renderStoryPart(currentPart);
+
 document.getElementById("restart").addEventListener("click", function () {
     restartStory();
 });
-
-// On first load
-renderStoryPart(currentPart);

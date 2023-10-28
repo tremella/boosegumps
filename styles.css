@@ -101,7 +101,7 @@ nav a:first-child {
     transform: translate(-50%, -50%); /* Ensures the centering is accurate */
     width: 80%;             /* Let's say it'll take up 80% of the screen width, adjust as needed */
     max-width: 600px;       /* Maximum width of the modal */
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     color: #95C120;
     padding: 20px;
     border: 2px solid #95C120;
@@ -115,7 +115,7 @@ nav a:first-child {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent black */
+    background-color: rgba(0, 0, 0, 0.8); /* Adjusted to transparent black */
     z-index: 999;  /* Place it below the modal but above everything else */
 }
 
@@ -126,4 +126,23 @@ nav a:first-child {
 
 .about-section a:hover {    
     text-decoration: underline;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Stack elements vertically */
+    }
+    
+    header h1 {
+        font-size: 20px; /* Adjust as needed */
+        margin-bottom: 10px; /* Space between the title and navigation */
+    }
+    
+    nav {
+        position: static; /* Reset the positioning */
+        transform: none; /* Reset the vertical centering */
+        text-align: center; /* Center the navigation links */
+        margin-top: 10px; /* Space above the navigation */
+    }
 }

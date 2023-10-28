@@ -363,7 +363,17 @@ const storyParts = {
     }
   },
   record_ritual: {
-    text: `You record the ritual. You've got evidence! You can report them to the police and get them arrested. You're a hero!`,
+    text: `You record the ritual. You've got evidence! You can report them to the police and get them arrested. 
+    
+    Unfortunately, these cultists aren't bored teens: they're the real deal. You don't have words to decribe the thing they summon, but it's not a demon. It's a god, or something worse. 
+
+    You don't have to worry for much longer, though. 
+    
+    "You have done well, my children. I have always rewarded those loyal to me, and reward you I will". 
+
+    You feel the terrible weight of the god's sudden gaze upon you. Your phone drops from your hand.
+    
+    It hisses, "but first, I must feed."`,
     image: "assets/cover_house.jpg",
     options: {
         A: {

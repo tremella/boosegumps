@@ -10,30 +10,44 @@ function renderStoryPart(part) {
     
     // Clear current options
     optionsSection.innerHTML = "";
-
-    if (part.options.A) {
-        let optionAButton = document.createElement('button');
-        optionAButton.textContent = part.options.A.text || "Choose Option A";
-        optionAButton.id = "optionA";
-        optionAButton.onclick = () => renderStoryPart(part.options.A.nextPart);
-        optionsSection.appendChild(optionAButton);
+    
+    const options = ['A', 'B'];
+    for (let opt of options) {
+        if (part.options[opt]) {
+            let button = document.createElement('button');
+            button.textContent = part.options[opt].text || `Choose Option ${opt}`;
+            button.id = `option${opt}`;
+            button.className = 'custom-button'
+            button.onclick = () => renderStoryPart(part.options[opt].nextPart);
+            optionsSection.appendChild(button);
+        }
     }
-
-    if (part.options.B) {
-        let optionBButton = document.createElement('button');
-        optionBButton.textContent = part.options.B.text || "Choose Option B";
-        optionBButton.id = "optionB";
-        optionBButton.onclick = () => renderStoryPart(part.options.B.nextPart);
-        optionsSection.appendChild(optionBButton);
-    }
-
+    
     // If there's only one button, center it.
-    if ((part.options.A && !part.options.B) || (!part.options.A && part.options.B)) {
+    if (optionsSection.querySelectorAll('button').length === 1) {
         const singleButton = optionsSection.querySelector('button');
         singleButton.style.margin = "0 auto";
         singleButton.style.display = "block";
     }
+    setUpAboutPage();
     setUpButtons(part);
+}
+
+function setUpAboutPage(){
+    document.getElementById('about').addEventListener('click', function(event) {
+        event.preventDefault(); 
+        document.querySelector('.about-section').style.display = 'block';
+        document.querySelector('.overlay').style.display = 'block';
+    });
+    
+    document.getElementById('closeAbout').addEventListener('click', function() {
+        document.querySelector('.about-section').style.display = 'none';
+        document.querySelector('.overlay').style.display = 'none';
+    });
+    document.querySelector('.overlay').addEventListener('click', function() {
+    document.querySelector('.about-section').style.display = 'none';
+    this.style.display = 'none';
+});
 }
 
 // Helper function to set up button event listeners

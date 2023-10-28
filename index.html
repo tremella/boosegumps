@@ -9,6 +9,7 @@
 </head>
 
 <body>
+    <div class="overlay" style="display: none;"></div>
     <header>
         <div class="title-section">
             <h1>Spooky Haunted House Adventure</h1>
@@ -28,9 +29,15 @@
         </div>
 
         <div class="options-section">
-            <button id="optionA">choose option A</button>
-            <button id="optionB">choose option B</button>
         </div>
+    </div>
+    <div class="about-section" style="display: none;">
+        <!-- About content goes here -->
+        <h2>About the Game</h2>
+        <p>We wrote this game in about a day with the help of ChatGPT and Midjourney. It's hosted on Github Pages.</p>
+        <h2> About us</h2>
+        <p> Jess and <a href="mdaswani.me">Mayank</a> are software engineers in London.</p>
+        <button id="closeAbout" class="custom-button">Close</button>
     </div>
     <script src="storyParts.js"></script>
     <script src="story.js"></script>

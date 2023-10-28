@@ -78,7 +78,7 @@ nav a:first-child {
     text-align: center; /* This will center the title text */
 }
 
-.options-section button {
+.custom-button {
     background-color: black;
     color: #95C120; /* neon green text */
     border: 2px solid #95C120; /* neon green border */
@@ -89,7 +89,41 @@ nav a:first-child {
     cursor: pointer; /* cursor changes to hand icon on hover */
 }
 
-.options-section button:hover {
+.custom-button:hover {
     background-color: #95C120; /* neon green background on hover */
     color: black; /* black text on hover */
+}
+
+.about-section {
+    position: fixed;        /* Position it fixed on the screen */
+    top: 50%;               /* Center vertically */
+    left: 50%;              /* Center horizontally */
+    transform: translate(-50%, -50%); /* Ensures the centering is accurate */
+    width: 80%;             /* Let's say it'll take up 80% of the screen width, adjust as needed */
+    max-width: 600px;       /* Maximum width of the modal */
+    background-color: #333;
+    color: #95C120;
+    padding: 20px;
+    border: 2px solid #95C120;
+    border-radius: 10px;
+    z-index: 1000;          /* Ensure it's above everything else */
+}
+
+.overlay {
+    position: fixed;  /* Cover the entire viewport */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);  /* Semi-transparent black */
+    z-index: 999;  /* Place it below the modal but above everything else */
+}
+
+.about-section a {
+    color: white;
+    text-decoration: none;    
+}
+
+.about-section a:hover {    
+    text-decoration: underline;
 }

@@ -173,7 +173,7 @@ const storyParts = {
 
       As your fingers trace over them, the room begins to grow colder, and an oppressive weight settles around you. You begin to feel hungry - starving, in fact. The book glows brighter. The glyphs are shifting before your eyes, multiplying, until you feel as though you're looking into the maw of something enormous.
 
-      Your vision blurs and you feel yourself sinking somehow, your thoughts being crowded out and a dark presence taking over. An entity flows from the book and now possesses your body. An insatiable hunger consumes every fiber of your being.
+      Your vision blurs and you feel yourself sinking somehow, your thoughts being crowded out and a dark presence taking over. An entity flows from the book and now possesses your body. An insatiable hunger consumes every fibre of your being.
 
       You turn to look at your prey.
 
@@ -381,7 +381,7 @@ const storyParts = {
     
     On cue, Alex kicks over a flaming brazier, scattering embers across the floor! The cultists shriek as their clothes catch fire, and the room descends into chaos.
 
-    Alex rushes over and saws at your bindings with his pocketknife. In the ensuing mayhem, he deftly works you free. You hold still, pulse thundering, as the ropes fall away. The cultists flail about in panic around you, oblivious.
+    Alex rushes over and saws at your bindings with his pocket knife. In the ensuing mayhem, he deftly works you free. You hold still, pulse thundering, as the ropes fall away. The cultists flail about in panic around you, oblivious.
 
     "We have to go.", he whispers. "Let's get out of here before they realise."
     `,
@@ -398,7 +398,7 @@ const storyParts = {
 
     Up the stairs, through shadowy corridors. Bursting outside into cool night air. The cult's furious shouts echo inside.
 
-    Alex grins, eyes bright with exhilaration. You manage a shaky smile in return. As one, you grab you bikes, pedalling wildly, down the road, unseen. Away from the nightmare.
+    Alex grins, eyes bright with exhilaration. You manage a shaky smile in return. As one, you grab your bikes, pedalling wildly, down the road, unseen. Away from the nightmare.
 
     Together.`,
     image: "assets/cover_house.jpg",
@@ -432,7 +432,7 @@ const storyParts = {
   listen_in: {
     text: `The cultists' chanting rises to a frenzied pace. You press yourself against the cold stone wall, straining to understand the strange guttural words.
 
-    An enormous pentagram is etched into the floor, strange symbols scrawled at each point. The robed figures sway, arms raised towards a towering onyx idol in the center. Its monstrous visage seems to leer in the flickering light.
+    An enormous pentagram is etched into the floor, strange symbols scrawled at each point. The robed figures sway in the flickering light.
     
     Alex cranes his neck to see past you, utterly fascinated. Don't these people realize how dangerous this is? You exchange an anxious glance. The candlelit chamber feels primal, terrifying.
     
@@ -456,7 +456,7 @@ const storyParts = {
   record_ritual: {
     text: `You record the ritual. You've got evidence! You can report them to the police and get them arrested. 
     
-    Unfortunately, these cultists aren't delusional, they're the real thing. You don't have words to decribe the thing they summon, but it's not a demon. It's a god, or something worse. 
+    Unfortunately, these cultists aren't delusional, they're the real thing. You don't have words to describe the thing they summon, but it's not a demon. It's a god, or something worse. 
 
     You don't have to worry for much longer, though. A voice like smoke fills the room, and the cultists fall silent.
     
@@ -505,7 +505,7 @@ const storyParts = {
     
     You pause to look back, panting. Cult members pour out of the mansion, smoke beginning to pour from inside. They don't seem to see you in the darkness. You watch as they flee into the surrounding woods, their infernal ritual interrupted.
     
-    You shudder with relief. The night fallen silent except for the distant, growing roar of flames. The mansion will be reduced to embers by sunrise. You're just grateful to have escaped with your lives.`,
+    You shudder with relief. The night falls silent except for the distant, growing roar of flames. The mansion will be reduced to embers by sunrise. You're just grateful to have escaped with your lives.`,
     image: "assets/cover_house.jpg",
     options: {
         A: {

@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Beurk';
+    src: url('assets/Beurk-ajg5.ttf') format('truetype');
+}
+
 body {
     font-family: "Lucida Console", monospace;
     background-color: black;
@@ -26,10 +31,12 @@ header {
 }
 
 header h1 {
-    font-size:24px;
+    padding-top: 8px;
+    font-size:48px;
     margin: 0;
     text-align: center;
-    flex: 1
+    flex: 1;
+    font-family: 'Beurk', sans-serif;
 }
 
 nav {
@@ -121,10 +128,10 @@ nav a:first-child {
 
 .about-section a {
     color: white;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
-.about-section a:hover {    
+.about-section a:hover {
     text-decoration: underline;
 }
 
@@ -133,16 +140,15 @@ nav a:first-child {
     header {
         flex-direction: column; /* Stack elements vertically */
     }
-    
+
     header h1 {
-        font-size: 20px; /* Adjust as needed */
-        margin-bottom: 10px; /* Space between the title and navigation */
+        font-size: 30px; /* Adjust as needed */
+        margin-bottom: 5px; /* Space between the title and navigation */
     }
-    
+
     nav {
         position: static; /* Reset the positioning */
         transform: none; /* Reset the vertical centering */
         text-align: center; /* Center the navigation links */
-        margin-top: 10px; /* Space above the navigation */
     }
 }

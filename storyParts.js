@@ -6,12 +6,13 @@ const storyParts = {
 
     To start your terrifying adventure, click the button below.... <b>if you dare</b>.`,
     image: "assets/cover_house.jpg",
-      options: {
-          A: {
-              nextPart: "start",
-              text: "START",
-          },
-      }
+    options: {
+        A: {
+            nextPart: "start",
+            text: "START",
+        },
+    },
+    name: "welcome",
   },
   start: {
       text: `It's the end of Autumn, and you and your twin brother Alex are riding your bikes home from school. The sun is setting, casting long shadows across the road. You're pedalling your bike, feeling the cool wind against your face. 

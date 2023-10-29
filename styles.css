@@ -136,6 +136,16 @@ nav a:first-child {
     text-decoration: underline;
 }
 
+#undo-button {
+    margin-left: 10px;
+    color: white;
+}
+
+#undo-button:hover {
+    text-decoration: none;
+    color: #95C120;  /* Adjust color on hover if needed */
+}
+
 /* Media query for mobile devices */
 @media (max-width: 768px) {
     header {

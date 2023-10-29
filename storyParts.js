@@ -2,9 +2,15 @@ const storyParts = {
   start: {
       text: `It's the end of Autumn, and you and your twin brother Alex are riding your bikes home from school. The sun is setting, casting long shadows across the road. You're pedalling your bike, feeling the cool wind against your face. 
       
-      Up ahead, an old mansion stands tall and foreboding. Its darkened windows seem to stare back at you, and the twisted trees surrounding it add to its eerie charm. For as long as you can remember, it's been the subject of countless rumours and ghost stories. But you've never seen anyone go in or out of it. It's been abandoned for years, and you've always wondered what secrets it holds.
+      Up ahead, the old mansion stands tall and foreboding. Its darkened windows seem to stare back at you.
+      
+      For as long as you can remember, it's been the subject of countless rumours and ghost stories. But you've never seen anyone go in or out of it. It's been abandoned for years, and you've always wondered why.
 
-      Any other day, you'd have ignored it and gone home. But today, something about the mansion seems different. The air feels charged, almost electric, and you can't shake off the feeling that something is about to happen. Almost against your will, you find yourself slowing down, your bike coming to a stop. Alex stops beside you, his curious gaze mirroring your own.`,
+      Any other day, you'd have ignored it and gone home. But today, something about the mansion seems different. Your bike slows, and you come to a stop. The air is still, and there's a silence which feels... expectant. You can't shake off the feeling that something is about to happen. 
+      
+      Alex stops beside you.
+      
+      "Susie?" he asks, "What's up?"`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -14,19 +20,22 @@ const storyParts = {
       }
   },
   the_dare: {
-    text: `He throws you a challenging glance.
+    text: `
+    'Is it just me, or does something seem off?' you ask, glancing at Alex.
 
-    "Bet you wouldn't ring the doorbell," he teases.
-
-    "Oh, grow up" you snap, unable to pull your gaze from the mansion. 
-
-    Without waiting for your response, Alex speeds up, his bike coming to a halt right in front of the mansion's entrance. He hops off, marches up the steps, and impulsively presses the doorbell. The chime echoes eerily, and after a tense and silent minute... nothing happens. 
+    "That place has always been creepy," he replies, unfazed. A beat passes, and he adds, "Dare me to ring the doorbell?" 
     
-    Alex turns to you, a smug grin on his face. "See? Nothing to be afraid of. I bet it's not even locked." 
+    "Oh, grow up" you snap, unable to pull your gaze from the mansion. He's always been like this, making up stupid dares and challenges, always pushing things too far. Most of the time he follows through whether you dare him or not, and then you both end up in trouble. 
 
-    He reaches for the door handle, and it swings open with a loud creak. You stare at him, wide-eyed. "Are you crazy? We can't just go in there!"
+    True to form, Alex starts pedalling again, his bike coming to a halt right in front of the mansion's entrance.
+    
+    "Alex, don't!" you call out, but he's already off his bike. Hebounds up the steps, and rings the doorbell. The chime echoes and after a tense and silent minute... nothing happens. 
+    
+    Alex turns to you. "See? Nothing to be afraid of. I bet it's not even locked." 
 
-    "Who would know? Besides, it's not like we're stealing anything. We're just looking around. Now, are you coming or not?"
+    On impulse he reaches for the door handle, and it swings open with a loud creak. You stare at him. "Are you crazy? We can't just go in there!"
+
+    "Who'd know? Besides, it's not like we're stealing anything. We're just looking around. Now, are you coming or not?"
     
     Do you follow Alex into the abandoned mansion? Or do you call it quits and head home?`,
     image: "assets/cover_house.jpg",
@@ -42,17 +51,17 @@ const storyParts = {
     }
   },
   enter_together: {
-      text: `As you step through the grand entrance, the first thing you notice is the smell. The air is thick with dust, but there's a strange metallic taste to the air you can't identify. In the dim light, you can barely make out the details of the foyer, but you can tell it must have been beautiful, once. 
+      text: `As you step through the entrance, the first thing you notice is the smell. The air is thick with dust, but there's a strange metallic taste to the air you can't identify. In the dim light, you can barely make out the details of the foyer, but you can tell it must have been beautiful once. 
 
-      The main hall is expansive, with a grand ruin of staircase leading to the upper floors. On either side, there are doors leading to various rooms, but one catches your eye - it's ajar, with a faint glow emanating from within. 
+      The main hall is dominated by a a grand ruin of a staircase. Some of its steps are missing, and the banister is broken in places. On either side, there are doors leading to various rooms, but one catches your eye - it's ajar, with a faint glow emanating from within. 
 
-      You turn to Alex, who's looking around with a mixture of excitement and apprehension. "Alex", you say. "If this place is abandoned, then why is there a light on in that room?"
+      "Alex", you say. "If this place is abandoned, then why is there a light on in that room?". Your voice echoes around the room, and you lower it instinctively.
 
-      He isn't listening to you. Instead, he's staring past the staircase, deeper into the foyer, his eyes narrowing. "Can you hear that?" he whispers, his voice barely audible. "It sounds like... humming."
+      He isn't listening to you. Instead, he's squinting past the staircase, deeper into the foyer. "Can you hear that?" he murmurs, his voice barely audible. "It sounds like... humming?"
+            
+      As you pause to listen, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from deeper within the house. It's puzzling - but so is the light coming from the room.
       
-      As you pause to listen, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from a corridor to your left. There's something both enticing and unnerving about it.
-      
-      Torn between the two, you hesitate. Do you follow the mysterious humming? Or do you investigate the lit room?`,
+      Torn between the two, you hesitate. Do you investigate the lit room, or the mysterious humming?`,
       image: "assets/foyer.jpg",
       options: {
           A: {
@@ -66,13 +75,13 @@ const storyParts = {
       },
   },
   go_home: {
-      text: `"Nope, no way. This place could fall apart at any moment," you say, shaking your head. "Besides, it's getting late. We should head home." 
+      text: `"Nope, no way. That place could fall apart at any moment," you say, shaking your head. "Besides, it's getting late. We should head home" 
+
+      You turn your bike away, but Alex calls back, 
       
-      You turn and start walking back to your bike, but Alex calls back, 
+      "Susie! I'm going in with or without you!". 
       
-      "Suit yourself! I'm going in!". 
-      
-      You keep walking, hoping to call his bluff, but when you glance back he's nowhere to be seen. Rolling your eyes, you wait a few seconds... then a few more. But he doesn't reappear. 
+      You start pedalling slowly, hoping to call his bluff, but when you glance back he's nowhere to be seen. Rolling your eyes, you wait a few seconds... then a few more. But he doesn't reappear. 
       
       Ugh. You know you're going to regret this...`,
       image: "assets/cover_house.jpg",
@@ -116,7 +125,6 @@ const storyParts = {
   },
   hum_or_shadow: {
     text: `
-
       "You're curious about the source of the light, and a little cold, but the hum is strangely irresistible. As one, you and Alex make your way deeper into the house, the sound growing louder with each step.
 
       As you and Alex continue down the corridor, the humming becomes more pronounced, echoing through the cold, draughty halls. But just as you're getting lost in its hypnotic rhythm, a swift movement catches your eye. A shadow, fleeting and elusive, darts into a room just off the corridor.
@@ -186,7 +194,15 @@ const storyParts = {
       }
   },
   inspect_basement: {
-      text: `You enter the basement. The humming is very loud now: you realise it's chanting. Do you creep forward in the dark, or investigate with your torch? `,
+      text: `
+      The echo of chanting reverberates through the darkness. You pause at the base of the staircase, peering ahead. You can barely see anything - it's cluttered with crates, bottles, some glowing dimly. Odd metal implements hang from the walls, but you're pretty sure they're not gardening tools. 
+
+      You strain your ears, trying to make out any words, but the it's not in any language you recognise. It's a low, sonorous drone, and it's coming from the next room, which is throwing out a dim red light - the only thing casting any light into the basement at all. 
+
+      You dig your phone out of your pocket. If you use the flashlight, you might see what's going on - maybe you can find something to defend yourself with. Just in case. 
+      
+      But it could also draw attention. Your hands tremble. Maybe it's better to inch forward slowly in the dark. You turn to Alex, but of course he's already moved ahead of you, no trace of fear in his expression. Reckless as always.
+      `,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -200,23 +216,24 @@ const storyParts = {
       }
   },
   inspect_shadowy_room: {
-      text: `Taking a deep breath, you decide, "Let's check out that shadow. It could be a clue."
+      text: `
+      Taking a deep breath, you nod towards the shadow. "We can't leave it unchecked. If someone's here, we need to know."
 
       Alex nods, and together, you both cautiously approach the door and step into the room. The atmosphere inside is heavy, and a chill runs down your spine. The room appears to be an old study, with a large oak desk in the center and bookshelves lining the walls. But what captures your attention is the shadow on the floor.
       
-      There's no discernible source for it. No person, no object casting it. Yet, there it is, dark and ominous. Before you can process this, the shadow starts to grow, stretching and distorting. It looms larger, taking on a more menacing form as it advances toward you.
+      There's no discernible source for it. No person, no object casting it. Yet, there it is, dark and ominous. Before you can process this, the shadow starts to spread across the floor, stretching and distorting. Then, it begins to flow upwards, forming a column, taking on a more human form as it flows toward you.
       
       Alex's eyes widen in alarm. "What the...?"
       
       You take a step back, heart pounding in your chest.
-      
-      He clenches his fists, looking equally frightened and determined. "I don't even know how to fight a shadow, but if we run, where do we go?"
+
+      "What <i>is</i> that?" Alex asks, his voice trembling.
       
       The shadow continues its relentless approach, the room growing colder.
       
-      "It's now or never," you say, trying to muster courage. "Stay and confront this... thing, or make a break for it."
-      
-      The choice is clear: Do you stand your ground against the shadow, or do you trust your instincts and run for safety?
+      "I don't know. But I don't think it likes us," you manage.
+
+      The choice is clear: Do you stand your ground against the shadow, or do you run?
       `,
       image: "assets/cover_house.jpg",
       options: {
@@ -275,7 +292,12 @@ const storyParts = {
 
       Alex is a little ways behind you, and you can hear him breathing heavily. You're not sure if he's scared or excited. For your part, you're definitely scared.
       
-      Suddenly, you trip - you knock over a bottle! It shatters and instantly, the humming is broken, and you scramble to hide yourself beneath a workbench, but it's too late - a hand grabs you and you're dragged into the next room.`,
+      Suddenly, you trip - you knock over a bottle! It shatters and instantly, the humming is broken.
+      
+      You need to get out of here <i>now</i>. You head for the basement stairs, glancing wildly about for Alex but you can't see him in the darkness. A floorboard creaks behind you. Before you can turn, leather-gloved hands clamp over your mouth, muffling your scream. You thrash and kick but your attacker is too strong. "Found you," a rough voice rasps.
+
+      Fingers dig into your cheeks. The stench of cloves and mildew fills your nose. You try to wrench free but their grip is like iron. Dark spots swarm your vision. The foyer tilts, and everything goes black.
+      `,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -285,7 +307,13 @@ const storyParts = {
       }
   },
   use_torch: {
-      text: `You use your torch to make your way across the room. Creeping to a doorway, you look through. You see dozens of robed figures in a candle-lit room. They're conducting a ritual. Listen or run home?`,
+      text: `You use your torch to make your way across the debris-strewn room. Old furniture lies smashed and fabrics hang in moth-eaten shreds. 
+
+      Approaching a doorway, you peer inside. Your breath catches in your throat. Dozens of robed figures stand within a vast chamber lit by flickering candles. Strange symbols cover the walls and floor.
+
+      The cultists sway in unison, chanting in a strange, guttural language. You feel a frightening, primal energy in the air. Like a coming storm. 
+      
+      Do you continue to listen, or run home?`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -307,9 +335,9 @@ const storyParts = {
 
       "In the name of the Serpent, the Tempter, and the Beast Below, we offer unto you this sacrifice that you may rise and bring us our dues" the figure intones.
 
-      This is a nightmare. You're surrounded and totally powerless. You can see your own petrified face in the reflection of the knife.
+      You're surrounded and totally powerless. You can see your own petrified face in the reflection of the knife.
       
-      But wait - you notice one of the cultists is much smaller than the others. You look at him carefully and the hooded face quickly lifts and ... winks? Alex!
+      But wait - you notice one of the cultists is much smaller than the others. You look at him carefully and the hooded face quickly lifts and... winks? Alex!
       `,
       image: "assets/cover_house.jpg",
       options: {
@@ -320,11 +348,22 @@ const storyParts = {
       }
   },
   rescue: {
-    text: `Alex seems to have a plan. He knocks over a couple of braziers filled with hot coals and rushes forward. Some of the coals land on the cultist's robes, which catch fire! In the ensuing chaos, he deftly works your bindings free. Amidst the yelling, he's the least of their worries.
+    text: `
+    Alex seems to have a plan - for once, you're thankful for your brother's impulsiveness. The figure raises the knife above you. 
     
+    On cue, Alex kicks over a flaming brazier, scattering embers across the floor. The cultists shriek as their clothes catch fire, consumed by chaos.
+
+    Alex rushes over and saws at your bindings with his pocketknife.In the ensuing chaos, he deftly works you free. You hold still, pulse pounding, as the ropes fall away. The cultists flail about in panic around you, oblivious.
+
     "We have to go.", he whispers. "Let's get out of here before they realise."
 
-    You run out of the room, before the cultists realise what's going on. Then you keep running until you're out of the front door of the mansion. You've escaped!
+    Alex squeezes your hand tightly and pulls you towards the stairs. Away from the flames, the wailing cultists.
+
+    Up the stairs, through shadowy corridors. Bursting outside into cool night air. The cult's furious shouts echo inside.
+
+    Alex grins, eyes bright with exhilaration. You manage a shaky smile in return. As one, you grab you bikes, pedalling wildly, down the road, unseen. Away from the nightmare.
+
+    Together.
     `,
     image: "assets/cover_house.jpg",
     options: {
@@ -335,7 +374,16 @@ const storyParts = {
     }
   },
   flee_and_fail: {
-      text: `You whisper to Alex that you've had enough- you're going home. Silence - you turn and he's not there. Suddenly, gloved hands close over your mouth and everything goes black. You've been kidnapped!`,
+      text: `
+      "I want to get out of here," you hiss to Alex, throat tight with fear. No response... you realise you've lost sight of him in the dark. Your heart skips a beat.
+
+      "Alex?" you rasp, a little louder. The chanting drones on somewhere nearby. Still no sign of him. Panic rises in your chest. Something brushes your arm and you yelp before you realise - it's just a cobweb.
+
+      "Alex, come on!" you raise your voice to speaking level. 
+      
+      You need to get out of here <i>now</i>. You head for the basement stairs, glancing wildly about for any sign of Alex. A floorboard creaks behind you. Before you can turn, leather-gloved hands clamp over your mouth, muffling your scream. You thrash and kick but your attacker is too strong. "Found you," a rough voice rasps.
+
+      Fingers dig into your cheeks. The stench of cloves and mildew fills your nose. You try to wrench free but their grip is like iron. Dark spots swarm your vision. The foyer tilts, and everything goes black.`,
       image: "assets/cover_house.jpg",
       options: {
           A: {
@@ -345,9 +393,17 @@ const storyParts = {
       }
   },
   listen_in: {
-    text: `You listen in. You hear the cultists chanting. They're summoning a demon! You're not sure if demons exist, but you really don't want to find out. 
+    text: `The cultists' chanting rises to a frenzied pace. You press yourself against the cold stone wall, straining to understand the strange guttural words.
+
+    An enormous pentagram is etched into the floor, strange symbols scrawled at each point. The robed figures sway, arms raised towards a towering onyx idol in the center. Its monstrous visage seems to leer in the flickering light.
     
-    You've got to do something! Do you record the ritual so you can report them to the police, or do you cause some chaos?`,
+    Alex cranes his neck to see past you, utterly fascinated. Don't these people realize how dangerous this is? You exchange an anxious glance. The candlelit chamber feels primal, terrifying.
+    
+    The cadence builds, and an acrid wind kicks up, making the candles gutter. Alex shivers, eyes bright. He mimes recording on his phone. Not a bad idea - video proof could help stop these people. But every instinct screams disrupt this immediately, by any means necessary. Before it goes too far.
+    
+    Your palms sweat as you weigh your options. Causing a ruckus might work, but you're outnumbered and unarmed. But doing nothing? Unthinkable. Your legs quiver, poised to run. Shadows leap and twist on the walls. The chanting reaches a thunderous crescendo. 
+    
+    What do you do?`,
     image: "assets/cover_house.jpg",
     options: {
         A: {
@@ -363,9 +419,9 @@ const storyParts = {
   record_ritual: {
     text: `You record the ritual. You've got evidence! You can report them to the police and get them arrested. 
     
-    Unfortunately, these cultists aren't bored teens: they're the real deal. You don't have words to decribe the thing they summon, but it's not a demon. It's a god, or something worse. 
+    Unfortunately, these cultists aren't delusional, they're the real thing. You don't have words to decribe the thing they summon, but it's not a demon. It's a god, or something worse. 
 
-    You don't have to worry for much longer, though. 
+    You don't have to worry for much longer, though. A voice like smoke fills the room, and the cultists fall silent.
     
     "You have done well, my children. I have always rewarded those loyal to me, and reward you I will". 
 
@@ -381,15 +437,17 @@ const storyParts = {
     }
   },
   cause_chaos: {
-    text: `You don't have much time, but you're sure there must be something in this basement you can use to ruin their ritual. You and Alex sneak around the room, and your fist closes around a box of matches. Alex holds up a bottle: it's full of some kind of liquid. In the other hand, he's found some rags.
+    text: `You don't have much time, but you're sure there must be something in this basement you can use to disrupt their ritual. You and Alex sneak around the room, and your fist closes around a box of matches. Alex holds up a bottle: it's full of some kind of liquid.
     
     "Petrol!" he whispers. "We start a fire, and then we run, and we don't stop running until we're home."
     
     "You're kidding, right?" you whisper back. "We can't just burn down the house!"
 
-    "We can't just let them summon a demon, either." he replies. "We have to do something. If they're smart, they'll have a fire extinguisher. If they're not, they'll just have to run for it. Either way, we ruin their ritual."
+    "We can't just let them summon a demon, either." he replies. "We have to do something. If they're smart, they'll have a fire extinguisher. If they're not, they'll just have to run for it. Either way, it buys us time to get help."
 
-    You nod. "Let's do it."`,
+    You glance into the room and spy the mouldering drapes on the wall, and nod. 
+    
+    "Let's do it."`,
     image: "assets/cover_house.jpg",
     options: {
         A: {
@@ -399,8 +457,19 @@ const storyParts = {
     }
   },
   chaos_continued: {
-    text: `You and Alex start a fire. The cultists panic, and you run. You run until you're out of the front door of the mansion. You've escaped!
-    `,
+    text: `
+    [TODO: finish this section]
+    In a burst of adrenaline, you grab the borrle from Alex and sneak into the room, him trailing behind oyu. You grab at a decrepit old drape and yank it down, soaking it with fluid. Alex catches on instantly, pulling out his lighter and setting the moth-eaten fabric ablaze. You hurl the flaming fabric onto the altar amidst the stricken cultists.
+
+    Chaos erupts. Robed figures scream and scramble over each other to get away from the growing flames.
+    
+    "Now!" Alex yells. He's already bolting up the basement stairs. You race after him through the smoke, flames licking at your heels. The cultists' angry shouts echo behind you.
+    
+    You burst out of the front door gulping mouthfuls of fresh night air. Alex whoops excitedly, but you don't stop running until you've sprinted all the way down the long driveway and out the iron gates, now standing open.
+    
+    You pause to look back, panting. Cult members pour out of the mansion, smoke beginning to pour from inside. They don't seem to see you in the darkness. You watch as they flee into the surrounding woods, their infernal ritual interrupted.
+    
+    You shudder with relief. The chanting has stopped, the night gone silent except for the growing, distant roar of flames. The mansion will be reduced to embers by sunrise. You're just grateful to have escaped with your lives.`,
     image: "assets/cover_house.jpg",
     options: {
         A: {

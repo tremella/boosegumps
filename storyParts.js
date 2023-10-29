@@ -43,7 +43,7 @@ const storyParts = {
 
     True to form, Alex starts pedalling again, his bike coming to a halt right in front of the mansion's entrance.
     
-    "Alex, don't!" you call out, but he's already off his bike. Hebounds up the steps, and rings the doorbell. The chime echoes and after a tense and silent minute... nothing happens. 
+    "Alex, don't!" you call out, but he's already off his bike. He bounds up the steps, and rings the doorbell. The chime echoes and after a tense and silent minute... nothing happens. 
     
     Alex turns to you. "See? Nothing to be afraid of. I bet it's not even locked." 
 
@@ -84,7 +84,7 @@ const storyParts = {
           },
           B: {
               nextPart: "hum_or_shadow",
-              text: "Follow the mysterious hum",
+              text: "Investigate the humming",
           }
       },
   },
@@ -192,7 +192,7 @@ const storyParts = {
   examine_binding: {
       text: `You say, "Let's take a closer look at the binding first."
 
-      You reach out and gently touch the book's cover. The texture is unlike anything you've felt on a book before, yet it's oddly familiar. Faintly spotted, just lightly. Your eyes drift to your own lightly freckled arm and The chilling realisation hits you: it's human skin.
+      You reach out and gently touch the book's cover. The texture is unlike anything you've felt on a book before, yet it's oddly familiar. Faintly spotted, just lightly. Your eyes drift to your own lightly freckled arm and the chilling realisation hits you: it's human skin.
       
       Your heart races, and a cold dread settles in your stomach. "Alex," you whisper, pulling your hand back as if burned, "This... this is skin."
       

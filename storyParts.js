@@ -1,4 +1,18 @@
 const storyParts = {
+  welcome: {
+    text: `Welcome to our playable project for Halloween 2023: BOOSEGUMPS. 
+
+    This is a tribute to a well-known choose-your-own-adventure series from yesteryear. 
+
+    To start your terrifying adventure, click the button below.... <b>if you dare</b>.`,
+    image: "assets/cover_house.jpg",
+      options: {
+          A: {
+              nextPart: "start",
+              text: "START",
+          },
+      }
+  },
   start: {
       text: `It's the end of Autumn, and you and your twin brother Alex are riding your bikes home from school. The sun is setting, casting long shadows across the road. You're pedalling your bike, feeling the cool wind against your face. 
       
@@ -351,9 +365,9 @@ const storyParts = {
     text: `
     Alex seems to have a plan - for once, you're thankful for your brother's impulsiveness. The figure raises the knife above you. 
     
-    On cue, Alex kicks over a flaming brazier, scattering embers across the floor. The cultists shriek as their clothes catch fire, consumed by chaos.
+    On cue, Alex kicks over a flaming brazier, scattering embers across the floor! The cultists shriek as their clothes catch fire, and the room descends into chaos.
 
-    Alex rushes over and saws at your bindings with his pocketknife.In the ensuing chaos, he deftly works you free. You hold still, pulse pounding, as the ropes fall away. The cultists flail about in panic around you, oblivious.
+    Alex rushes over and saws at your bindings with his pocketknife. In the ensuing mayhem, he deftly works you free. You hold still, pulse thundering, as the ropes fall away. The cultists flail about in panic around you, oblivious.
 
     "We have to go.", he whispers. "Let's get out of here before they realise."
 

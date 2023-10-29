@@ -79,7 +79,7 @@ function restartStory() {
 
 
 // On first load
-let currentPart = storyParts.start; // Start with the initial story part
+let currentPart = storyParts.welcome; // Start with the welcome page.
 renderStoryPart(currentPart);
 
 document.getElementById("restart").addEventListener("click", function () {

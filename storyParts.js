@@ -139,7 +139,7 @@ const storyParts = {
   },
   hum_or_shadow: {
     text: `
-      "You're curious about the source of the light, and a little cold, but the hum is strangely irresistible. As one, you and Alex make your way deeper into the house, the sound growing louder with each step.
+      "You're curious about the source of the light, but the hum is strangely irresistible. As one, you and Alex make your way deeper into the house, the sound growing louder with each step.
 
       As you and Alex continue down the corridor, the humming becomes more pronounced, echoing through the cold, draughty halls. But just as you're getting lost in its hypnotic rhythm, a swift movement catches your eye. A shadow, fleeting and elusive, darts into a room just off the corridor.
       
@@ -157,7 +157,7 @@ const storyParts = {
       options: {
           A: {
               nextPart: "inspect_basement",
-              text: "Continue on...",
+              text: "Continue on....",
           },
           B: {
               nextPart: "inspect_shadowy_room",
@@ -212,6 +212,9 @@ const storyParts = {
   },
   inspect_basement: {
       text: `
+
+      Behind the staircase, there's a door leading to a basement, where the humming is loudest. You tread carefully down the stairs.
+
       The echo of chanting reverberates through the darkness. You pause at the base of the staircase, peering ahead. You can barely see anything - it's cluttered with crates, bottles, some glowing dimly. Odd metal implements hang from the walls, but you're pretty sure they're not gardening tools. 
 
       You strain your ears, trying to make out any words, but the it's not in any language you recognise. It's a low, sonorous drone, and it's coming from the next room, which is throwing out a dim red light - the only thing casting any light into the basement at all. 

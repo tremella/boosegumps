@@ -94,6 +94,7 @@ nav a:first-child {
     outline: none; /* remove browser default focus outline */
     transition: background-color 0.3s, color 0.3s; /* smooth transition for hover effects */
     cursor: pointer; /* cursor changes to hand icon on hover */
+    margin: 5px; /* prevents buttons from mashing together in mobile mode */
 }
 
 .custom-button:hover {

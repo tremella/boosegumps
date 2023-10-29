@@ -186,7 +186,7 @@ const storyParts = {
       image: "assets/tome.jpg",
       options: {
           A: {
-              nextPart: "start",
+              nextPart: "play_again",
               text: "THE END.",
           },
       }
@@ -291,7 +291,7 @@ const storyParts = {
     image: "assets/shadow_being.jpg",
     options: {
         A: {
-            nextPart: "start",
+            nextPart: "play_again",
             text: "THE END."
         }
     }
@@ -310,7 +310,7 @@ const storyParts = {
     image: "assets/shadow_being.jpg",
     options: {
         A: {
-            nextPart: "start",
+            nextPart: "play_again",
             text: "THE END."
         }
     }
@@ -404,7 +404,7 @@ const storyParts = {
     image: "assets/cover_house.jpg",
     options: {
         A: {
-            nextPart: "start",
+            nextPart: "play_again",
             text: "THE END."
         }
     }
@@ -468,7 +468,7 @@ const storyParts = {
     image: "assets/demon.jpg",
     options: {
         A: {
-            nextPart: "start",
+            nextPart: "play_again",
             text: "THE END."
         }
     }
@@ -500,19 +500,40 @@ const storyParts = {
     Chaos erupts. Robed figures scream and scramble over each other to get away from the growing flames.
     
     "Go!" Alex yells. He's already bolting up the basement stairs. You race after him through the smoke, flames licking at your heels. The cultists' angry shouts echo behind you.
-    
-    You burst out of the front door gulping mouthfuls of fresh night air. Alex whoops excitedly, but you don't stop - you mount your bikes and start pedalling like mad.
+    `,
+    image: "assets/fire.jpg",
+    options: {
+        A: {
+            nextPart: "chaos_complete",
+            text: "run!"
+        }
+    }
+  },
+  chaos_complete: {
+    text: `You burst out of the front door gulping mouthfuls of fresh night air. Alex whoops excitedly, but you don't stop - you mount your bikes and start pedalling like mad.
     
     You pause to look back, panting. Cult members pour out of the mansion, smoke beginning to pour from inside. They don't seem to see you in the darkness. You watch as they flee into the surrounding woods, their infernal ritual interrupted.
     
     You shudder with relief. The night falls silent except for the distant, growing roar of flames. The mansion will be reduced to embers by sunrise. You're just grateful to have escaped with your lives.`,
     image: "assets/cover_house.jpg",
     options: {
-        A: {
-            nextPart: "start",
-            text: "THE END."
-        }
+      A: {
+          nextPart: "play_again",
+          text: "THE END."
+      }
     }
+  },
+  play_again: {
+    text: `You've reached one end, but there are many more to discover.
+    
+    Click the button below to start again.`,
+    image: "assets/cover_house.jpg",
+    options: {
+      A: {
+          nextPart: "start",
+          text: "Play again"
+      }
+    },
   }
   // ... continue structuring for all the nodes.
 };

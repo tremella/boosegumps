@@ -113,17 +113,17 @@ const storyParts = {
   enter_library: {
       text: `"If someone's here, we'd better figure that out first", you reason. "Let's check out that room."
 
-      You and Alex head towards the door and step into a small library. The room is wildly cluttered, and books line the shelves, their spines worn and faded from time. The room is warmly lit by a fireplace, casting dancing shadows on the walls. But what immediately catches your attention is a single book displayed on a pedestal in the centre of the room.
-      
-      Approaching it, you see that the book is ancient, its pages yellowed and fragile. It's open to a particular page, and a passage is highlighted with a strange, glowing ink. The book's binding, however, is even more intriguing. It's made of an unfamiliar material, dark and leathery, with an odd texture that seems almost... alive. Familiar, somehow.
-      
-      Alex leans in closer, squinting at the highlighted passage. "?"
-      
-      You hesitate, torn between the mysterious passage and the book's peculiar binding. "I don't know... Something about that binding gives me the creeps."
-      
-      Alex nods in agreement. "Yeah, it's definitely weird. But that passage... it might tell us something about this place."
-      
-      Now faced with another decision, do you choose to read the glowing passage out loud, hoping it provides answers? Or do you investigate the strange material of the book's binding, looking for clues about its origins?
+      You and Alex head towards the door and step into a small library. The room is cluttered, and books line the shelves, their spines worn and faded from time. There's a fireplace, the glow of coals warming the room. Someone must have been here, you realise with a thrill.
+
+      But what immediately catches your attention is a single book displayed on a pedestal in the centre of the room.
+
+      Approaching it, you see that the book is ancient, its pages yellowed and fragile. It's open to a particular page, and a circular diagram is highlighted with a strange, glowing ink. The book's binding, however, is even more intriguing. It's made of an unfamiliar material, pale and leathery, with an odd texture that seems almost... alive. Familiar, somehow.
+
+      Alex leans in closer, squinting at the glowing circle.
+
+      You hesitate, torn between the mysterious image and the book's peculiar binding. 
+
+      Do you choose to inspect the glowing glyphs closer? Or do you investigate the strange material of the book's binding, looking for clues about its origins?
       `,
       image: "assets/tome.jpg",
       options: {

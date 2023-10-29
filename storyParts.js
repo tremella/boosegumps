@@ -223,7 +223,7 @@ const storyParts = {
       
       But it could also draw attention. Your hands tremble. Maybe it's better to inch forward slowly in the dark. You turn to Alex, but of course he's already moved ahead of you, no trace of fear in his expression. Reckless as always.
       `,
-      image: "assets/cover_house.jpg",
+      image: "assets/basement.jpg",
       options: {
           A: {
               nextPart: "creep_in_dark",
@@ -326,7 +326,7 @@ const storyParts = {
 
       Fingers dig into your cheeks. The stench of cloves and mildew fills your nose. You try to wrench free but their grip is like iron. Dark spots swarm your vision. The foyer tilts, and everything goes black.
       `,
-      image: "assets/cover_house.jpg",
+      image: "assets/basement.jpg",
       options: {
           A: {
               nextPart: "kidnapped",
@@ -411,8 +411,8 @@ const storyParts = {
       
       You need to get out of here <i>now</i>. You head for the basement stairs, glancing wildly about for any sign of Alex. A floorboard creaks behind you. Before you can turn, leather-gloved hands clamp over your mouth, muffling your scream. You thrash and kick but your attacker is too strong. "Found you," a rough voice rasps.
 
-      Fingers dig into your cheeks. The stench of cloves and mildew fills your nose. You try to wrench free but their grip is like iron. Dark spots swarm your vision. The foyer tilts, and everything goes black.`,
-      image: "assets/cover_house.jpg",
+      Fingers dig into your cheeks. The stench of cloves and mildew fills your nose. You try to wrench free but their grip is like iron. Dark spots swarm your vision. The room tilts, and everything goes black.`,
+      image: "assets/basement.jpg",
       options: {
           A: {
               nextPart: "kidnapped",
@@ -456,7 +456,7 @@ const storyParts = {
     You feel the terrible weight of the god's sudden gaze upon you. Your phone slips from your hand.
     
     It hisses, "but first, I must feed."`,
-    image: "assets/cover_house.jpg",
+    image: "assets/demon.jpg",
     options: {
         A: {
             nextPart: "start",
@@ -487,7 +487,7 @@ const storyParts = {
   chaos_continued: {
     text: `
     [TODO: finish this section]
-    In a burst of adrenaline, you grab the borrle from Alex and sneak into the room, him trailing behind oyu. You grab at a decrepit old drape and yank it down, soaking it with fluid. Alex catches on instantly, pulling out his lighter and setting the moth-eaten fabric ablaze. You hurl the flaming fabric onto the altar amidst the stricken cultists.
+    In a burst of adrenaline, you grab the borrle from Alex and sneak into the room, him trailing behind you. You grab at a decrepit old drape and yank it down, soaking it with fluid. Alex catches on instantly, pulling out his lighter and setting the moth-eaten fabric ablaze. You hurl the flaming fabric onto the altar amidst the stricken cultists.
 
     Chaos erupts. Robed figures scream and scramble over each other to get away from the growing flames.
     

@@ -117,3 +117,8 @@ document.getElementById('undo-button').addEventListener('click', function(event)
         }
     }
 });
+
+document.getElementById("toggleTheme").addEventListener("click", function(event) {
+    event.preventDefault(); // This prevents the default action of the link
+    document.body.classList.toggle("halloween-mode");
+});

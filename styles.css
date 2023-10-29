@@ -3,11 +3,29 @@
     src: url('assets/Beurk-ajg5.ttf') format('truetype');
 }
 
+:root {
+    --main-color: #95C120; /* Neon Green */
+    --background-color: black;
+}
+
+body.halloween-mode {
+    --main-color: orange;
+    --background-color: black;
+}
+
+body.halloween-mode img {
+    filter: hue-rotate(300deg); /* Adjust the degree value as needed */
+}
+
+body.halloween-mode #toggleTheme {
+    font-weight: bold;
+}
+
 body {
     font-family: "Lucida Console", monospace;
-    background-color: black;
-    padding: 20px;
-    color: #95C120;
+    background-color: var(--background-color);
+    color: var(--main-color);
+    padding: 20px;    
 }
 
 /* Always have a scrollbar */
@@ -29,8 +47,8 @@ header {
     border: 1px solid white;
     border-radius: 2px;
     padding: 5px 20px; /* gives some space on the sides */
-    border-color: #95C120;
-    color: #95C120;
+    border-color: var(--main-color);
+    color: var(--main-color);
     justify-content: center;
     align-items: center;
 }
@@ -90,9 +108,9 @@ nav a:first-child {
 }
 
 .custom-button {
-    background-color: black;
-    color: #95C120; /* neon green text */
-    border: 2px solid #95C120; /* neon green border */
+    background-color: var(--background-color);
+    color: var(--main-color);
+    border: 2px solid var(--main-color);; /* neon green border */
     padding: 10px 15px; /* add some space around the text */
     text-decoration: none; /* remove underlines from anchor tags */
     outline: none; /* remove browser default focus outline */
@@ -102,7 +120,7 @@ nav a:first-child {
 }
 
 .custom-button:hover {
-    background-color: #95C120; /* neon green background on hover */
+    background-color: var(--main-color); /* neon green background on hover */
     color: black; /* black text on hover */
 }
 
@@ -114,9 +132,9 @@ nav a:first-child {
     width: 80%;             /* Let's say it'll take up 80% of the screen width, adjust as needed */
     max-width: 600px;       /* Maximum width of the modal */
     background-color: rgba(0, 0, 0, 0.8);
-    color: #95C120;
+    color: var(--main-color);
     padding: 20px;
-    border: 2px solid #95C120;
+    border: 2px solid var(--main-color);
     border-radius: 10px;
     z-index: 1000;          /* Ensure it's above everything else */
 }
@@ -147,7 +165,27 @@ nav a:first-child {
 
 #undo-button:hover {
     text-decoration: none;
-    color: #95C120;  /* Adjust color on hover if needed */
+    color: var(--main-color);  /* Adjust color on hover if needed */
+}
+
+nav a#toggleTheme img {
+    height: 24px; /* or whatever height fits best in your navbar */
+    width: auto; /* maintain aspect ratio */
+    margin: 0; /* adjust as necessary */
+    padding: 0; /* adjust as necessary */
+    vertical-align: bottom; /* to align it properly with any adjacent text or items */
+    transition: transform 0.3s; /* for a hover effect, if desired */
+}
+
+nav a#toggleTheme:active,
+nav a#toggleTheme:visited,
+nav a#toggleTheme:hover {
+    text-decoration: none;    
+}
+
+nav a#toggleTheme:hover img {
+    text-decoration: none;
+    transform: scale(1.2); /* slightly enlarge the image on hover */
 }
 
 /* Media query for mobile devices */

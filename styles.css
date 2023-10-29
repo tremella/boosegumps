@@ -10,6 +10,11 @@ body {
     color: #95C120;
 }
 
+/* Always have a scrollbar */
+html {
+    overflow-y: scroll;
+}
+
 .container {
     max-width: 800px;
     margin: 0 auto;
@@ -40,9 +45,9 @@ header h1 {
 }
 
 nav {
-    position: absolute;
-    top: 50%;
-    right: 20px;  /* Push it to the far right, while still keeping some space from the border */
+    position: fixed;
+    top: 70px;
+    right: 50px;  /* Push it to the far right, while still keeping some space from the border */
     transform: translateY(-50%);  /* Vertically center it */
 }
 

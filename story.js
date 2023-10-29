@@ -3,7 +3,6 @@ let historyStack = [];
 
 // Function to render a part of the story
 function renderStoryPart(part) {
-    console.log(historyStack);
     if (part.name != "welcome")
         historyStack.push(part)
     document.getElementById("story-text").innerHTML = part.text;
@@ -98,7 +97,10 @@ document.getElementById('undo-button').addEventListener('click', function(event)
     event.preventDefault();
     if (historyStack.length > 1) {  // The first part is the starting point, so don't pop it.
         historyStack.pop();  // Remove the current part
-        currentPart = historyStack[historyStack.length - 1];  // Get the previous part
-        renderStoryPart(currentPart);  // Render the previous part
+        const lastPart = historyStack.pop();
+        if (lastPart){
+            currentPart = lastPart;
+            renderStoryPart(lastPart);  // Render the previous part\
+        }
     }
 });

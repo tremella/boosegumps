@@ -487,7 +487,7 @@ const storyParts = {
   chaos_continued: {
     text: `
     [TODO: finish this section]
-    In a burst of adrenaline, you grab the borrle from Alex and sneak into the room, him trailing behind you. You grab at a decrepit old drape and yank it down, soaking it with fluid. Alex catches on instantly, pulling out his lighter and setting the moth-eaten fabric ablaze. You hurl the flaming fabric onto the altar amidst the stricken cultists.
+    In a burst of adrenaline, you grab the bottle from Alex and sneak into the room, him trailing behind you. You grab at a decrepit old drape and yank it down, soaking it with fluid. Alex catches on instantly, pulling out his lighter and setting the moth-eaten fabric ablaze. You hurl the flaming fabric onto the altar amidst the stricken cultists.
 
     Chaos erupts. Robed figures scream and scramble over each other to get away from the growing flames.
     

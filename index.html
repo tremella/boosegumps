@@ -15,6 +15,8 @@
 
     gtag('config', 'G-P7PD5E1S8G');
     </script>
+    <!-- For the undo font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 
 <body>
@@ -23,11 +25,12 @@
         <div class="title-section">
             <h1>Boosegumps</h1>
         </div>
-        <nav>
-            <a href="#" id="restart" title="Restart the story.">restart</a>
-            <a href="#" id="about">about</a>
-        </nav>
     </header>
+    <nav>
+        <a href="#" id="undo-button" title="Undo last action"><i class="fas fa-undo"></i></a>
+        <a href="#" id="restart" title="Restart the story.">restart</a>
+        <a href="#" id="about">about</a>
+    </nav>
     <div class="container">
         <div class="image-section">
             <img src="assets/cover_house.jpg" alt="Haunted House" id="story-image">
@@ -43,9 +46,12 @@
     <div class="about-section" style="display: none;">
         <!-- About content goes here -->
         <h2>About the Game</h2>
-        <p>We wrote this game in about a day with the help of ChatGPT and Midjourney. It's hosted on Github Pages.</p>
+        <p>We wrote this game in about a day with the help of ChatGPT and Midjourney. It's hosted on Github Pages.
+           You can read the source <a href="https://github.com/tremella/boosegumps">here</a>. Fixes welcome!
+        </p>
         <h2> About us</h2>
-        <p> Jess and <a href="https://mdaswani.me">Mayank</a> are software engineers in London. We're married, and wanted to have a little bit of halloween fun!</p>
+        <p> Jess and <a href="https://mdaswani.me">Mayank</a> are software engineers in London.
+            We're married, and wanted to have a little bit of halloween fun!</p>
         <button id="closeAbout" class="custom-button">Close</button>
     </div>
     <script src="storyParts.js"></script>

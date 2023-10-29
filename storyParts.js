@@ -32,7 +32,8 @@ const storyParts = {
               nextPart: "the_dare",
               text: "continue",
           },
-      }
+      },
+      name: "start",
   },
   the_dare: {
     text: `
@@ -216,7 +217,7 @@ const storyParts = {
 
       The echo of chanting reverberates through the darkness. You pause at the base of the staircase, peering ahead. You can barely see anything - it's cluttered with crates, bottles, some glowing dimly. Odd metal implements hang from the walls, but you're pretty sure they're not gardening tools. 
 
-      You strain your ears, trying to make out any words, but the it's not in any language you recognise. It's a low, sonorous drone, and it's coming from the next room, which is throwing out a dim red light - the only thing casting any light into the basement at all. 
+      You strain your ears, trying to make out any words, but it's not in any language you recognise. It's a low, sonorous drone, and it's coming from the next room, which is throwing out a dim red light - the only thing casting any light into the basement at all. 
 
       You dig your phone out of your pocket. If you use the flashlight, you might see what's going on - maybe you can find something to defend yourself with. Just in case. 
       
@@ -346,7 +347,7 @@ const storyParts = {
       }
   },
   kidnapped: {
-      text: `You awake to the chill of stone against your back, and the sonorous drone of a dozen voices - maybe more. You glimpse robed figures surrounding you in a well lit room. Enormous braziers line the walls, casting flickering shadows.
+      text: `You awake to the chill of stone against your back, and the sonorous drone of a dozen voices - maybe more. You glimpse robed figures surrounding you in a well-lit room. Enormous braziers line the walls, casting flickering shadows.
       
       "Our Dark Brother, we offer unto you an innocent soul, that you may grant us your power," the robed figures chant. "We offer unto you this sacrifice, that you may grant us your presence." 
       

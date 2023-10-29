@@ -278,7 +278,7 @@ const storyParts = {
   fight_shadowy: {
     text: `With a burst of courage, you ball your fists and swing at the shadow and... miss.
 
-    The shadow surges forward, its formless shape swirling and twisting. You try to fend it off, swinging and kicking at it, but it's like battling smoke. The more you move, the more it seems to envelop you.
+    The shadow surges forward, swirling and twisting. You try to fend it off, swinging and kicking at it, but it's like battling smoke. The more you move, the more it seems to envelop you.
     
     Suddenly, you feel a coldness seep into you, starting from your feet and rising. You glance down in horror to see your own shadow merging with the dark entity. It's consuming you, pulling you in. The coldness spreads, numbing your senses.
     
@@ -342,7 +342,7 @@ const storyParts = {
       The cultists sway in unison, chanting in a strange, guttural language. You feel a frightening, primal energy in the air. Like a coming storm. 
       
       Do you continue to listen, or run home?`,
-      image: "assets/cover_house.jpg",
+      image: "assets/basement.jpg",
       options: {
           A: {
               nextPart: "listen_in",
@@ -367,7 +367,7 @@ const storyParts = {
       
       But wait - you notice one of the cultists is much smaller than the others. You look at him carefully and the hooded face quickly lifts and... winks? Alex!
       `,
-      image: "assets/cover_house.jpg",
+      image: "assets/ritual.jpg",
       options: {
           A: {
               nextPart: "rescue",
@@ -384,15 +384,23 @@ const storyParts = {
     Alex rushes over and saws at your bindings with his pocketknife. In the ensuing mayhem, he deftly works you free. You hold still, pulse thundering, as the ropes fall away. The cultists flail about in panic around you, oblivious.
 
     "We have to go.", he whispers. "Let's get out of here before they realise."
-
-    Alex squeezes your hand tightly and pulls you towards the stairs. Away from the flames, the wailing cultists.
+    `,
+    image: "assets/ritual.jpg",
+    options: {
+        A: {
+            nextPart: "rescue_complete",
+            text: "run!"
+        }
+    }
+  },
+  rescue_complete: {
+    text: `Alex squeezes your hand tightly and pulls you towards the stairs. Away from the flames, the wailing cultists.
 
     Up the stairs, through shadowy corridors. Bursting outside into cool night air. The cult's furious shouts echo inside.
 
     Alex grins, eyes bright with exhilaration. You manage a shaky smile in return. As one, you grab you bikes, pedalling wildly, down the road, unseen. Away from the nightmare.
 
-    Together.
-    `,
+    Together.`,
     image: "assets/cover_house.jpg",
     options: {
         A: {
@@ -401,6 +409,7 @@ const storyParts = {
         }
     }
   },
+
   flee_and_fail: {
       text: `
       "I want to get out of here," you hiss to Alex, throat tight with fear. No response... you realise you've lost sight of him in the dark. Your heart skips a beat.
@@ -432,7 +441,7 @@ const storyParts = {
     Your palms sweat as you weigh your options. Causing a ruckus might work, but you're outnumbered and unarmed. But doing nothing? Unthinkable. Your legs quiver, poised to run. Shadows leap and twist on the walls. The chanting reaches a thunderous crescendo. 
     
     What do you do?`,
-    image: "assets/cover_house.jpg",
+    image: "assets/ritual.jpg",
     options: {
         A: {
             nextPart: "record_ritual",
@@ -476,7 +485,7 @@ const storyParts = {
     You glance into the room and spy the mouldering drapes on the wall, and nod. 
     
     "Let's do it."`,
-    image: "assets/cover_house.jpg",
+    image: "assets/basement.jpg",
     options: {
         A: {
             nextPart: "chaos_continued",
@@ -486,18 +495,17 @@ const storyParts = {
   },
   chaos_continued: {
     text: `
-    [TODO: finish this section]
     In a burst of adrenaline, you grab the bottle from Alex and sneak into the room, him trailing behind you. You grab at a decrepit old drape and yank it down, soaking it with fluid. Alex catches on instantly, pulling out his lighter and setting the moth-eaten fabric ablaze. You hurl the flaming fabric onto the altar amidst the stricken cultists.
 
     Chaos erupts. Robed figures scream and scramble over each other to get away from the growing flames.
     
-    "Now!" Alex yells. He's already bolting up the basement stairs. You race after him through the smoke, flames licking at your heels. The cultists' angry shouts echo behind you.
+    "Go!" Alex yells. He's already bolting up the basement stairs. You race after him through the smoke, flames licking at your heels. The cultists' angry shouts echo behind you.
     
-    You burst out of the front door gulping mouthfuls of fresh night air. Alex whoops excitedly, but you don't stop running until you've sprinted all the way down the long driveway and out the iron gates, now standing open.
+    You burst out of the front door gulping mouthfuls of fresh night air. Alex whoops excitedly, but you don't stop - you mount your bikes and start pedalling like mad.
     
     You pause to look back, panting. Cult members pour out of the mansion, smoke beginning to pour from inside. They don't seem to see you in the darkness. You watch as they flee into the surrounding woods, their infernal ritual interrupted.
     
-    You shudder with relief. The chanting has stopped, the night gone silent except for the growing, distant roar of flames. The mansion will be reduced to embers by sunrise. You're just grateful to have escaped with your lives.`,
+    You shudder with relief. The night fallen silent except for the distant, growing roar of flames. The mansion will be reduced to embers by sunrise. You're just grateful to have escaped with your lives.`,
     image: "assets/cover_house.jpg",
     options: {
         A: {

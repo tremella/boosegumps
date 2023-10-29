@@ -52,24 +52,27 @@ function setUpAboutPage(){
 
 // Helper function to set up button event listeners
 function setUpButtons(part) {  
-    const optionAButton = document.getElementById("optionA");
-    const optionBButton = document.getElementById("optionB");
+    const options = ['A', 'B'];
 
-    // Clear previous listeners
-    if (optionAButton) {
-        optionAButton.replaceWith(optionAButton.cloneNode(true));
-        document.getElementById("optionA").addEventListener("click", function () {
-            currentPart = storyParts[part.options.A.nextPart];
-            renderStoryPart(currentPart);
-        });
-    }
-    if (optionBButton) {
-        optionBButton.replaceWith(optionBButton.cloneNode(true));
-        document.getElementById("optionB").addEventListener("click", function () {
-            currentPart = storyParts[part.options.B.nextPart];
-            renderStoryPart(currentPart);
-        });
-    }
+    options.forEach(option => {
+        const button = document.getElementById(`option${option}`);
+
+        if (button) {
+            // Clear previous listeners
+            button.replaceWith(button.cloneNode(true));
+            document.getElementById(`option${option}`).addEventListener("click", function () {
+                currentPart = storyParts[part.options[option].nextPart];
+                renderStoryPart(currentPart);
+
+                // Scroll to top
+                window.scrollTo({
+                    top: 0,
+                    left: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+    });
 }
 
 function restartStory() {

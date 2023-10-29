@@ -74,7 +74,7 @@ const storyParts = {
       
       You keep walking, hoping to call his bluff, but when you glance back he's nowhere to be seen. Rolling your eyes, you wait a few seconds... then a few more. But he doesn't reappear. 
       
-      Ugh. You know you're going to regret this..."`,
+      Ugh. You know you're going to regret this...`,
       image: "assets/cover_house.jpg",
       options: {
           A: {

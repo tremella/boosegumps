@@ -5,6 +5,8 @@ let historyStack = [];
 function renderStoryPart(part) {
     if (part.name != "welcome")
         historyStack.push(part)
+    if (part.name == "start")
+        historyStack = []
     document.getElementById("story-text").innerHTML = part.text;
     document.getElementById("story-image").src = part.image;
     // Replace \n in text with <br> in HTML.
@@ -80,8 +82,19 @@ function setUpButtons(part) {
 }
 
 function restartStory() {
+    historyStack = []
     currentPart = storyParts.start;
-    renderStoryPart(currentPart);
+    renderStoryPart(currentPart);}
+
+function undo() {
+    if (historyStack.length > 1) {  // The first part is the starting point, so don't pop it.
+        historyStack.pop();  // Remove the current part
+        const lastPart = historyStack.pop();
+        if (lastPart){
+            currentPart = lastPart;
+            renderStoryPart(lastPart);  // Render the previous part\
+        }
+    }
 }
 
 

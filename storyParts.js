@@ -199,14 +199,12 @@ const storyParts = {
       But there's no reply. You glance around, searching for your sibling. "Alex?" you call out, your voice trembling.
       
       He seems to have wandered deeper into the library, perhaps looking for another exit. You're about to call out to him again when suddenly, a strong hand covers your mouth from behind, stifling your scream. Panic surges through you as you try to struggle, but the grip is too strong, and darkness quickly envelops you as you succumb to unconsciousness.
-      
-      The last thing you remember is the faint scent of old books and the cold touch of the leather-bound tome.
-      `,
+            `,
       image: "assets/tome.jpg",
       options: {
           A: {
               nextPart: "kidnapped",
-              text: "kidnapped!",
+              text: "uh oh.",
           }
       }
   },

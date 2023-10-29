@@ -153,7 +153,7 @@ const storyParts = {
                   
       Now faced with a decision, do you choose to investigate the mysterious shadow, or do you continue on, drawn by the humming?
     `,
-    image: "assets/cover_house.jpg",
+    image: "assets/foyer.jpg",
       options: {
           A: {
               nextPart: "inspect_basement",
@@ -239,31 +239,39 @@ const storyParts = {
 
       Alex nods, and together, you both cautiously approach the door and step into the room. The atmosphere inside is heavy, and a chill runs down your spine. The room appears to be an old study, with a large oak desk in the center and bookshelves lining the walls. But what captures your attention is the shadow on the floor.
       
-      There's no discernible source for it. No person, no object casting it. Yet, there it is, dark and ominous. Before you can process this, the shadow starts to spread across the floor, stretching and distorting. Then, it begins to flow upwards, forming a column, taking on a more human form as it flows toward you.
-      
-      Alex's eyes widen in alarm. "What the...?"
-      
-      You take a step back, heart pounding in your chest.
-
-      "What <i>is</i> that?" Alex asks, his voice trembling.
-      
-      The shadow continues its relentless approach, the room growing colder.
-      
-      "I don't know. But I don't think it likes us," you manage.
-
-      The choice is clear: Do you stand your ground against the shadow, or do you run?
+      There's no discernible source for it. No person, no object casting it. Yet, there it is, dark and ominous. Before you can process this, the shadow starts to spread across the floor, stretching and distorting. Then, it begins to flow upwards, forming a column, taking on a more human form as it flows toward you!
       `,
-      image: "assets/cover_house.jpg",
+      image: "assets/foyer.jpg",
       options: {
           A: {
-              nextPart: "run_from_shadowy",
-              text: "run!",
-          },
-          B: {
-              nextPart: "fight_shadowy",
-              text: "fight",
+              nextPart: "inspect_shadowy_room_part_two",
+              text: "uh oh...",
           },
       }
+  },
+  inspect_shadowy_room_part_two: {
+    text: `Alex's eyes widen in alarm. "What the...?"
+      
+    You take a step back, heart pounding in your chest.
+
+    "What <i>is</i> that?" Alex asks, his voice trembling.
+    
+    The shadow continues its relentless approach, the room growing colder.
+    
+    "I don't know. But I don't think it likes us," you manage.
+
+    The choice is clear: Do you stand your ground against the shadow, or do you run?`,
+    image: "assets/shadow_being.jpg",
+    options: {
+      A: {
+          nextPart: "run_from_shadowy",
+          text: "run!",
+      },
+      B: {
+          nextPart: "fight_shadowy",
+          text: "fight",
+      },
+    },
   },
   fight_shadowy: {
     text: `With a burst of courage, you ball your fists and swing at the shadow and... miss.
@@ -278,7 +286,7 @@ const storyParts = {
     
     Then, nothingness.
     `,
-    image: "assets/cover_house.jpg",
+    image: "assets/shadow_being.jpg",
     options: {
         A: {
             nextPart: "start",
@@ -297,7 +305,7 @@ const storyParts = {
     
     The corridor, the humming, the mansion - all fade away, leaving behind only the echoing memory of your brother's scream.
     `,
-    image: "assets/cover_house.jpg",
+    image: "assets/shadow_being.jpg",
     options: {
         A: {
             nextPart: "start",

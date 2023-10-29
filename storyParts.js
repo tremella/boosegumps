@@ -166,17 +166,20 @@ const storyParts = {
       }
   },
   read_contents: {
-      text: `Taking a deep breath, you start reciting the highlighted words. As you do, the room begins to grow colder, and an oppressive weight settles around you. The words don’t just echo in your ears, but in your very soul. A malevolent force, ancient and powerful, seeps into you from the book.
+      text: `
+      Taking a deep breath, you peer closer at the highlighted glyphs. Upon closer inspection, there's a jagged quality to them, a sort of circular symmetry. Did it look like that before?
 
-      Your vision blurs and you feel yourself being pushed to the back of your own mind, a dark presence taking over. An entity, awakened by the words you read, now possesses your body. An insatiable hunger consumes every fiber of your being.
-      
-      Your mouth stretches impossibly wide, revealing countless rows of sharp, jagged teeth. Alex, horror evident in his eyes, stammers, "Susie? What... What have you done?"
-      
-      But there's no Susie anymore. Only the demon and its hunger.
-      
-      With a swift, ravenous movement, you close the distance between you and Alex. His screams echo in the room, but are quickly silenced.
-      
-      The mansion, with its countless mysteries and shadows, now has a new, malevolent denizen. And within you, where Susie once stood, there remains only an endless, insatiable hunger.
+      As your fingers trace over them, the room begins to grow colder, and an oppressive weight settles around you. You begin to feel hungry - starving, in fact. The book glows brighter. The glyphs are shifting before your eyes, multiplying, until you feel as though you're looking into the maw of something enormous.
+
+      Your vision blurs and you feel yourself sinking somehow, your thoughts being crowded out and a dark presence taking over. An entity flows from the book and now possesses your body. An insatiable hunger consumes every fiber of your being.
+
+      You turn to look at your prey.
+
+      Your mouth stretches impossibly wide, revealing countless rows of sharp, jagged teeth. Alex, horror evident in his eyes, stammers, "Susie? What... What's going on?"
+
+      But there's no Susie anymore. There's only hunger.
+
+      With a swift, ravenous movement, you close the distance between you and Alex. His screams echo in the room, but are quickly silenced. The mansion, with its countless mysteries and shadows, now has a new, malevolent denizen. And within you, where Susie once stood, there remains only an endless, insatiable hunger.
       `,
       image: "assets/tome.jpg",
       options: {

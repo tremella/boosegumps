@@ -69,11 +69,11 @@ const storyParts = {
   enter_together: {
       text: `As you step through the entrance, the first thing you notice is the smell. The air is thick with dust, but there's a strange metallic taste to the air you can't identify. In the dim light, you can barely make out the details of the foyer, but you can tell it must have been beautiful once. 
 
-      The main hall is dominated by a a grand ruin of a staircase. Some of its steps are missing, and the banister is broken in places. On either side, there are doors leading to various rooms, but one catches your eye - it's ajar, with a faint glow emanating from within. 
+      The main hall is dominated by a grand staircase. On either side, there are doors leading to various rooms, but one catches your eye - it's ajar, with a faint glow emanating from within. 
 
       "Alex", you say. "If this place is abandoned, then why is there a light on in that room?". Your voice echoes around the room, and you lower it instinctively.
 
-      He isn't listening to you. Instead, he's squinting past the staircase, deeper into the foyer. "Can you hear that?" he murmurs, his voice barely audible. "It sounds like... humming?"
+      He isn't listening to you. Instead, he's squinting deeper into the foyer. "Can you hear that?" he murmurs, his voice barely audible. "It sounds like... humming?"
             
       As you pause to listen, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from deeper within the house. It's puzzling - but so is the light coming from the room.
       

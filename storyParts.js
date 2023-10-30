@@ -7,15 +7,14 @@ const storyParts = {
     To start your terrifying adventure, click the button below.... <b>if you dare</b>.`,
     image: "assets/cover_house.jpg",
     options: {
-        A: {
-            nextPart: "start",
-            text: "START",
-        },
+      A: {
+        nextPart: "start",
+        text: "START",
+      },
     },
-    name: "welcome",
   },
   start: {
-      text: `It's the end of Autumn, and you and your twin brother Alex are riding your bikes home from school. The sun is setting, casting long shadows across the road. You're pedalling your bike, feeling the cool wind against your face. 
+    text: `It's the end of Autumn, and you and your twin brother Alex are riding your bikes home from school. The sun is setting, casting long shadows across the road. You're pedalling your bike, feeling the cool wind against your face. 
       
       Up ahead, the old mansion stands tall and foreboding. Its darkened windows seem to stare back at you.
       
@@ -26,14 +25,13 @@ const storyParts = {
       Alex stops beside you.
       
       "Susie?" he asks, "What's up?"`,
-      image: "assets/cover_house.jpg",
-      options: {
-          A: {
-              nextPart: "the_dare",
-              text: "continue",
-          },
+    image: "assets/cover_house.jpg",
+    options: {
+      A: {
+        nextPart: "the_dare",
+        text: "continue",
       },
-      name: "start",
+    },
   },
   the_dare: {
     text: `
@@ -55,19 +53,19 @@ const storyParts = {
     
     Do you follow Alex into the abandoned mansion? Or do you call it quits and head home?`,
     image: "assets/cover_house.jpg",
-      options: {
-        A: {
-            nextPart: "enter_together",
-            text: "Enter mansion",
-        },
-        B: {
-            nextPart: "go_home",
-            text: "Go home",
-        }
-    }
+    options: {
+      A: {
+        nextPart: "enter_together",
+        text: "Enter mansion",
+      },
+      B: {
+        nextPart: "go_home",
+        text: "Go home",
+      },
+    },
   },
   enter_together: {
-      text: `As you step through the entrance, the first thing you notice is the smell. The air is thick with dust, but there's a strange metallic taste to the air you can't identify. In the dim light, you can barely make out the details of the foyer, but you can tell it must have been beautiful once. 
+    text: `As you step through the entrance, the first thing you notice is the smell. The air is thick with dust, but there's a strange metallic taste to the air you can't identify. In the dim light, you can barely make out the details of the foyer, but you can tell it must have been beautiful once. 
 
       The main hall is dominated by a grand staircase. On either side, there are doors leading to various rooms, but one catches your eye - it's ajar, with a faint glow emanating from within. 
 
@@ -78,20 +76,20 @@ const storyParts = {
       As you pause to listen, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from deeper within the house. It's puzzling - but so is the light coming from the room.
       
       Torn between the two, you hesitate. Do you investigate the lit room, or the mysterious humming?`,
-      image: "assets/foyer.jpg",
-      options: {
-          A: {
-              nextPart: "enter_library",
-              text: "Investigate the room",
-          },
-          B: {
-              nextPart: "hum_or_shadow",
-              text: "Investigate the humming",
-          }
+    image: "assets/foyer.jpg",
+    options: {
+      A: {
+        nextPart: "enter_library",
+        text: "Investigate the room",
       },
+      B: {
+        nextPart: "hum_or_shadow",
+        text: "Investigate the humming",
+      },
+    },
   },
   go_home: {
-      text: `"Nope, no way. That place could fall apart at any moment," you say, shaking your head. "Besides, it's getting late. We should head home" 
+    text: `"Nope, no way. That place could fall apart at any moment," you say, shaking your head. "Besides, it's getting late. We should head home" 
 
       You turn your bike away, but Alex calls back, 
       
@@ -100,20 +98,20 @@ const storyParts = {
       You start pedalling slowly, hoping to call his bluff, but when you glance back he's nowhere to be seen. Rolling your eyes, you wait a few seconds... then a few more. But he doesn't reappear. 
       
       Ugh. You know you're going to regret this...`,
-      image: "assets/cover_house.jpg",
-      options: {
-          A: {
-              nextPart: "enter_together",
-              text: "Follow Alex (to make sure he's safe)",
-          },
-          B: {
-              nextPart: "enter_together",
-              text: "Follow Alex (to yell at him)",
-          }
+    image: "assets/cover_house.jpg",
+    options: {
+      A: {
+        nextPart: "enter_together",
+        text: "Follow Alex (to make sure he's safe)",
       },
+      B: {
+        nextPart: "enter_together",
+        text: "Follow Alex (to yell at him)",
+      },
+    },
   },
   enter_library: {
-      text: `"If someone's here, we'd better figure that out first", you reason. "Let's check out that room."
+    text: `"If someone's here, we'd better figure that out first", you reason. "Let's check out that room."
 
       You and Alex head towards the door and step into a small library. The room is cluttered, and books line the shelves, their spines worn and faded from time. There's a fireplace, the glow of coals warming the room. Someone must have been here, you realise with a thrill.
 
@@ -127,17 +125,17 @@ const storyParts = {
 
       Do you choose to inspect the glowing glyphs closer? Or do you investigate the strange material of the book's binding, looking for clues about its origins?
       `,
-      image: "assets/tome.jpg",
-      options: {
-          A: {
-              nextPart: "read_contents",
-              text: "Read contents",
-          },
-          B: {
-              nextPart: "examine_binding",
-              text: "Examine binding",
-          }
-      }
+    image: "assets/tome.jpg",
+    options: {
+      A: {
+        nextPart: "read_contents",
+        text: "Read contents",
+      },
+      B: {
+        nextPart: "examine_binding",
+        text: "Examine binding",
+      },
+    },
   },
   hum_or_shadow: {
     text: `
@@ -156,19 +154,19 @@ const storyParts = {
       Now faced with a decision, do you choose to investigate the mysterious shadow, or do you continue on, drawn by the humming?
     `,
     image: "assets/foyer.jpg",
-      options: {
-          A: {
-              nextPart: "inspect_basement",
-              text: "Continue on....",
-          },
-          B: {
-              nextPart: "inspect_shadowy_room",
-              text: "Investigate shadowy room",
-          }
-      }
+    options: {
+      A: {
+        nextPart: "inspect_basement",
+        text: "Continue on....",
+      },
+      B: {
+        nextPart: "inspect_shadowy_room",
+        text: "Investigate shadowy room",
+      },
+    },
   },
   read_contents: {
-      text: `
+    text: `
       Taking a deep breath, you peer closer at the highlighted glyphs. Upon closer inspection, there's a jagged quality to them, a sort of circular symmetry. Did it look like that before?
 
       As your fingers trace over them, the room begins to grow colder, and an oppressive weight settles around you. You begin to feel hungry - starving, in fact. The book glows brighter. The glyphs are shifting before your eyes, multiplying, until you feel as though you're looking into the maw of something enormous.
@@ -183,16 +181,16 @@ const storyParts = {
 
       With a swift, ravenous movement, you close the distance between you and Alex. His screams echo in the room, but are quickly silenced. The mansion, with its countless mysteries and shadows, now has a new, malevolent denizen. And within you, where Susie once stood, there remains only an endless, insatiable hunger.
       `,
-      image: "assets/tome.jpg",
-      options: {
-          A: {
-              nextPart: "play_again",
-              text: "THE END.",
-          },
-      }
+    image: "assets/tome.jpg",
+    options: {
+      A: {
+        nextPart: "play_again",
+        text: "THE END.",
+      },
+    },
   },
   examine_binding: {
-      text: `You say, "Let's take a closer look at the binding first."
+    text: `You say, "Let's take a closer look at the binding first."
 
       You reach out and gently touch the book's cover. The texture is unlike anything you've felt on a book before, yet it's oddly familiar. Faintly spotted, just lightly. Your eyes drift to your own lightly freckled arm and the chilling realisation hits you: it's human skin.
       
@@ -202,16 +200,16 @@ const storyParts = {
       
       He seems to have wandered deeper into the library, perhaps looking for another exit. You're about to call out to him again when suddenly, a strong hand covers your mouth from behind, stifling your scream. Panic surges through you as you try to struggle, but the grip is too strong, and darkness quickly envelops you as you succumb to unconsciousness.
             `,
-      image: "assets/tome.jpg",
-      options: {
-          A: {
-              nextPart: "kidnapped",
-              text: "uh oh.",
-          }
-      }
+    image: "assets/tome.jpg",
+    options: {
+      A: {
+        nextPart: "kidnapped",
+        text: "uh oh.",
+      },
+    },
   },
   inspect_basement: {
-      text: `
+    text: `
 
       Behind the staircase, there's a door leading to a basement, where the humming is loudest. You tread carefully down the stairs.
 
@@ -223,33 +221,33 @@ const storyParts = {
       
       But it could also draw attention. Your hands tremble. Maybe it's better to inch forward slowly in the dark. You turn to Alex, but of course he's already moved ahead of you, no trace of fear in his expression. Reckless as always.
       `,
-      image: "assets/basement.jpg",
-      options: {
-          A: {
-              nextPart: "creep_in_dark",
-              text: "play it safe, keep the torch off",
-          },
-          B: {
-            nextPart: "use_torch",
-            text: "use torch to investigate",
-        }
-      }
+    image: "assets/basement.jpg",
+    options: {
+      A: {
+        nextPart: "creep_in_dark",
+        text: "play it safe, keep the torch off",
+      },
+      B: {
+        nextPart: "use_torch",
+        text: "use torch to investigate",
+      },
+    },
   },
   inspect_shadowy_room: {
-      text: `
+    text: `
       Taking a deep breath, you nod towards the shadow. "We can't leave it unchecked. If someone's here, we need to know."
 
       Alex nods, and together, you both cautiously approach the door and step into the room. The atmosphere inside is heavy, and a chill runs down your spine. The room appears to be an old study, with a large oak desk in the center and bookshelves lining the walls. But what captures your attention is the shadow on the floor.
       
       There's no discernible source for it. No person, no object casting it. Yet, there it is, dark and ominous. Before you can process this, the shadow starts to spread across the floor, stretching and distorting. Then, it begins to flow upwards, forming a column, taking on a more human form as it flows toward you!
       `,
-      image: "assets/foyer.jpg",
-      options: {
-          A: {
-              nextPart: "inspect_shadowy_room_part_two",
-              text: "uh oh...",
-          },
-      }
+    image: "assets/foyer.jpg",
+    options: {
+      A: {
+        nextPart: "inspect_shadowy_room_part_two",
+        text: "uh oh...",
+      },
+    },
   },
   inspect_shadowy_room_part_two: {
     text: `Alex's eyes widen in alarm. "What the...?"
@@ -266,12 +264,12 @@ const storyParts = {
     image: "assets/shadow_being.jpg",
     options: {
       A: {
-          nextPart: "run_from_shadowy",
-          text: "run!",
+        nextPart: "run_from_shadowy",
+        text: "run!",
       },
       B: {
-          nextPart: "fight_shadowy",
-          text: "fight",
+        nextPart: "fight_shadowy",
+        text: "fight",
       },
     },
   },
@@ -290,11 +288,11 @@ const storyParts = {
     `,
     image: "assets/shadow_being.jpg",
     options: {
-        A: {
-            nextPart: "play_again",
-            text: "THE END."
-        }
-    }
+      A: {
+        nextPart: "play_again",
+        text: "THE END.",
+      },
+    },
   },
   run_from_shadowy: {
     text: `Heart pounding, you shout, "Run!" and bolt towards the door, with Alex right behind you.
@@ -309,14 +307,14 @@ const storyParts = {
     `,
     image: "assets/shadow_being.jpg",
     options: {
-        A: {
-            nextPart: "play_again",
-            text: "THE END."
-        }
-    }
+      A: {
+        nextPart: "play_again",
+        text: "THE END.",
+      },
+    },
   },
   creep_in_dark: {
-      text: `You creep forward in the dark. The basement is lit only by the glow of the next room. 
+    text: `You creep forward in the dark. The basement is lit only by the glow of the next room. 
 
       Alex is a little ways behind you, and you can hear him breathing heavily. You're not sure if he's scared or excited. For your part, you're definitely scared.
       
@@ -326,36 +324,36 @@ const storyParts = {
 
       Fingers dig into your cheeks. The stench of cloves and mildew fills your nose. You try to wrench free but their grip is like iron. Dark spots swarm your vision. The foyer tilts, and everything goes black.
       `,
-      image: "assets/basement.jpg",
-      options: {
-          A: {
-              nextPart: "kidnapped",
-              text: "uh oh.",
-          },
-      }
+    image: "assets/basement.jpg",
+    options: {
+      A: {
+        nextPart: "kidnapped",
+        text: "uh oh.",
+      },
+    },
   },
   use_torch: {
-      text: `You use your torch to make your way across the debris-strewn room. Old furniture lies smashed and fabrics hang in moth-eaten shreds. 
+    text: `You use your torch to make your way across the debris-strewn room. Old furniture lies smashed and fabrics hang in moth-eaten shreds. 
 
       Approaching a doorway, you peer inside. Your breath catches in your throat. Dozens of robed figures stand within a vast chamber lit by flickering candles. Strange symbols cover the walls and floor.
 
       The cultists sway in unison, chanting in a strange, guttural language. You feel a frightening, primal energy in the air. Like a coming storm. 
       
       Do you continue to listen, or run home?`,
-      image: "assets/basement.jpg",
-      options: {
-          A: {
-              nextPart: "listen_in",
-              text: "eavesdrop",
-          },
-          B: {
-              nextPart: "flee_and_fail",
-              text: "go home!",
-          },
-      }
+    image: "assets/basement.jpg",
+    options: {
+      A: {
+        nextPart: "listen_in",
+        text: "eavesdrop",
+      },
+      B: {
+        nextPart: "flee_and_fail",
+        text: "go home!",
+      },
+    },
   },
   kidnapped: {
-      text: `You awake to the chill of stone against your back, and the sonorous drone of a dozen voices - maybe more. You glimpse robed figures surrounding you in a well-lit room. Enormous braziers line the walls, casting flickering shadows.
+    text: `You awake to the chill of stone against your back, and the sonorous drone of a dozen voices - maybe more. You glimpse robed figures surrounding you in a well-lit room. Enormous braziers line the walls, casting flickering shadows.
       
       "Our Dark Brother, we offer unto you an innocent soul, that you may grant us your power," the robed figures chant. "We offer unto you this sacrifice, that you may grant us your presence." 
       
@@ -367,13 +365,13 @@ const storyParts = {
       
       But wait - you notice one of the cultists is much smaller than the others. You look at him carefully and the hooded face quickly lifts and... winks? Alex!
       `,
-      image: "assets/ritual.jpg",
-      options: {
-          A: {
-              nextPart: "rescue",
-              text: "What will Alex do?",
-          },
-      }
+    image: "assets/ritual.jpg",
+    options: {
+      A: {
+        nextPart: "rescue",
+        text: "What will Alex do?",
+      },
+    },
   },
   rescue: {
     text: `
@@ -387,11 +385,11 @@ const storyParts = {
     `,
     image: "assets/ritual.jpg",
     options: {
-        A: {
-            nextPart: "rescue_complete",
-            text: "run!"
-        }
-    }
+      A: {
+        nextPart: "rescue_complete",
+        text: "run!",
+      },
+    },
   },
   rescue_complete: {
     text: `Alex squeezes your hand tightly and pulls you towards the stairs. Away from the flames, the wailing cultists.
@@ -403,15 +401,15 @@ const storyParts = {
     Together.`,
     image: "assets/cover_house.jpg",
     options: {
-        A: {
-            nextPart: "play_again",
-            text: "THE END."
-        }
-    }
+      A: {
+        nextPart: "play_again",
+        text: "THE END.",
+      },
+    },
   },
 
   flee_and_fail: {
-      text: `
+    text: `
       "I want to get out of here," you hiss to Alex, throat tight with fear. No response... you realise you've lost sight of him in the dark. Your heart skips a beat.
 
       "Alex?" you rasp, a little louder. The chanting drones on somewhere nearby. Still no sign of him. Panic rises in your chest. Something brushes your arm and you yelp before you realise - it's just a cobweb.
@@ -421,13 +419,13 @@ const storyParts = {
       You need to get out of here <i>now</i>. You head for the basement stairs, glancing wildly about for any sign of Alex. A floorboard creaks behind you. Before you can turn, leather-gloved hands clamp over your mouth, muffling your scream. You thrash and kick but your attacker is too strong. "Found you," a rough voice rasps.
 
       Fingers dig into your cheeks. The stench of cloves and mildew fills your nose. You try to wrench free but their grip is like iron. Dark spots swarm your vision. The room tilts, and everything goes black.`,
-      image: "assets/basement.jpg",
-      options: {
-          A: {
-              nextPart: "kidnapped",
-              text: "uh oh.",
-          },
-      }
+    image: "assets/basement.jpg",
+    options: {
+      A: {
+        nextPart: "kidnapped",
+        text: "uh oh.",
+      },
+    },
   },
   listen_in: {
     text: `The cultists' chanting rises to a frenzied pace. You press yourself against the cold stone wall, straining to understand the strange guttural words.
@@ -443,15 +441,15 @@ const storyParts = {
     What do you do?`,
     image: "assets/ritual.jpg",
     options: {
-        A: {
-            nextPart: "record_ritual",
-            text: "record the ritual",
-        },
-        B: {
-            nextPart: "cause_chaos",
-            text: "cause some chaos!",
-        },
-    }
+      A: {
+        nextPart: "record_ritual",
+        text: "record the ritual",
+      },
+      B: {
+        nextPart: "cause_chaos",
+        text: "cause some chaos!",
+      },
+    },
   },
   record_ritual: {
     text: `You record the ritual. You've got evidence! You can report them to the police and get them arrested. 
@@ -467,11 +465,11 @@ const storyParts = {
     It hisses, "but first, I must feed."`,
     image: "assets/demon.jpg",
     options: {
-        A: {
-            nextPart: "play_again",
-            text: "THE END."
-        }
-    }
+      A: {
+        nextPart: "play_again",
+        text: "THE END.",
+      },
+    },
   },
   cause_chaos: {
     text: `You don't have much time, but you're sure there must be something in this basement you can use to disrupt their ritual. You and Alex sneak around the room, and your fist closes around a box of matches. Alex holds up a bottle: it's full of some kind of liquid.
@@ -487,11 +485,11 @@ const storyParts = {
     "Let's do it."`,
     image: "assets/basement.jpg",
     options: {
-        A: {
-            nextPart: "chaos_continued",
-            text: "burn baby burn!"
-        }
-    }
+      A: {
+        nextPart: "chaos_continued",
+        text: "burn baby burn!",
+      },
+    },
   },
   chaos_continued: {
     text: `
@@ -503,11 +501,11 @@ const storyParts = {
     `,
     image: "assets/fire.jpg",
     options: {
-        A: {
-            nextPart: "chaos_complete",
-            text: "run!"
-        }
-    }
+      A: {
+        nextPart: "chaos_complete",
+        text: "run!",
+      },
+    },
   },
   chaos_complete: {
     text: `You burst out of the front door gulping mouthfuls of fresh night air. Alex whoops excitedly, but you don't stop - you mount your bikes and start pedalling like mad.
@@ -518,10 +516,10 @@ const storyParts = {
     image: "assets/cover_house.jpg",
     options: {
       A: {
-          nextPart: "play_again",
-          text: "THE END."
-      }
-    }
+        nextPart: "play_again",
+        text: "THE END.",
+      },
+    },
   },
   play_again: {
     text: `You've reached one end, but there are many more to discover.
@@ -530,10 +528,10 @@ const storyParts = {
     image: "assets/cover_house.jpg",
     options: {
       A: {
-          nextPart: "start",
-          text: "Play again"
-      }
+        nextPart: "start",
+        text: "Play again",
+      },
     },
-  }
+  },
   // ... continue structuring for all the nodes.
 };

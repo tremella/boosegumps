@@ -13,7 +13,7 @@ body.halloween-mode {
     --background-color: black;
 }
 
-body.halloween-mode img {
+body.halloween-mode img:not(.pumpkin-button) {
     filter: hue-rotate(300deg); /* Adjust the degree value as needed */
 }
 

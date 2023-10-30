@@ -27,7 +27,7 @@ const storyProgression = {
                                 chaos_continued: ["chaos_complete"],
                                 chaos_complete: ["play_again"],
                                     play_again: ["start"],
-                            flee_and_fail: ["kidnapped"],                            
+                            flee_and_fail: ["kidnapped"],
                         inspect_shadowy_room: ["inspect_shadowy_room_part_two"],
                             inspect_shadowy_room_part_two: ["run_from_shadowy", "fight_shadowy"],
                                 run_from_shadowy: ["play_again"],

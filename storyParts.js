@@ -267,7 +267,7 @@ const storyParts = {
 
       Suddenly, the books begin to rattle and shake, then launch themselves from the shelves! Their pages flap as they soar through the air to buffet and strike you from all directions. You and Alex scramble higher, but a tome smacks into the back of your head, slamming your face directly into the shelf and you cry out with pain.  
 
-      A sudden crack splits the air. The shelf judders violently, spilling you and Alex down in a chaos of falling books. Heavy tomes slam into you from all directions. Dazed, you try to stand, but slip as more books crash down upon you both. Then more, and more. 
+      A sudden crack splits the air. The shelf judders violently, spilling you and Alex down in an avalanche of falling books. Heavy tomes slam into you from all directions. Dazed, you try to stand, but slip as more books crash down upon you both. Then more, and more. 
 
       The weight is unbearable, all light blotted out by the wreckage of shelves and countless texts. 
 

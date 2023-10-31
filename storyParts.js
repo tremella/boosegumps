@@ -478,7 +478,7 @@ const storyParts = {
       
       You need to get out of here <i>now</i>. You head for the basement stairs, glancing wildly about for Alex but you can't see him in the darkness. A floorboard creaks behind you. Before you can turn, leather-gloved hands clamp over your mouth, muffling your scream. You thrash and kick but your attacker is too strong. "Found you," a rough voice rasps.
 
-      Fingers dig into your cheeks. The stench of cloves and mildew fills your nose. You try to wrench free but their grip is like iron. Dark spots swarm your vision. The foyer tilts, and everything goes black.
+      Fingers dig into your cheeks. The stench of cloves and mildew fills your nose. You try to wrench free but their grip is like iron. Dark spots swarm your vision. The room tilts, and everything goes black.
       `,
     image: "assets/basement.jpg",
     options: {
@@ -558,12 +558,11 @@ const storyParts = {
     image: "assets/cover_house.jpg",
     options: {
       A: {
-        nextPart: "play_again",
+        nextPart: "play_again_part_two",
         text: "THE END.",
       },
     },
   },
-
   flee_and_fail: {
     text: `
       "I want to get out of here," you hiss to Alex, throat tight with fear. No response... you realise you've lost sight of him in the dark. Your heart skips a beat.

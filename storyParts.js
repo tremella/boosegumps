@@ -190,7 +190,8 @@ const storyParts = {
     },
   },
   examine_binding: {
-    text: `You say, "Let's take a closer look at the binding first."
+    text: `
+        You say, "Let's take a closer look at the binding first."
 
       You reach out and gently touch the book's cover. The texture is unlike anything you've felt on a book before, yet it's oddly familiar. Faintly spotted, just lightly. Your eyes drift to your own lightly freckled arm and the chilling realisation hits you: it's human skin.
       
@@ -198,14 +199,169 @@ const storyParts = {
       
       But there's no reply. You glance around, searching for your sibling. "Alex?" you call out, your voice trembling.
       
-      He seems to have wandered deeper into the library, perhaps looking for another exit. You're about to call out to him again when suddenly, a strong hand covers your mouth from behind, stifling your scream. Panic surges through you as you try to struggle, but the grip is too strong, and darkness quickly envelops you as you succumb to unconsciousness.
-            `,
+      He seems to have wandered deeper into the library, perhaps looking for another exit. You leave the book and pace towards a nearby corner. Turning it, you call out again. 
+
+      “Alex? Where did you go?”
+                `,
     image: "assets/tome.jpg",
     options: {
       A: {
-        nextPart: "kidnapped",
-        text: "uh oh.",
+        nextPart: "library_search",
+        text: "Search",
       },
+    },
+  },
+  library_search : {
+    text: `
+    “I'm over here!” 
+
+    Alex's voice sounds oddly distant. That's when you realise that the room is far larger than you thought. This aisle of books seems to keep stretching for a long time. 
+
+    “I think we're in different aisles! Keep moving down and meet me at the end!”
+
+    “Right!” he agrees. You run to the end, but when you reach it, you find you can only turn to one side. You round yet another corner and - he's not there. You glance back and freeze. 
+
+    Where you were before, the aisle has disappeared altogether: the shelves have closed themselves off and you see only a dead end. With dawning horror, you realise the library has become a sprawling labyrinth, unbound by the rules of space and time.
+
+    You can still hear Alex's distant footsteps - and all you can do is keep searching.
+    `,
+    image: "assets/library_shelves.jpg",
+    options: {
+        A: {
+            nextPart: "library_search_complete",
+            text: "Search",
+        },
+    },
+  },
+  library_search_complete : {
+    text: `Time passes. You and Alex chase each other around for what could be hours before you finally locate him, but your relief is short-lived. You're both trapped in an impossible maze, alone and exhausted. The shelves refuse to stay in one place: old paths close off and new ones appear the second you look away. You could wander forever and never escape. 
+
+    It's clear: you've got to try something else. But what?
+
+    “We could call for help. Maybe someone would hear us?”
+
+    Alex shivers.
+
+    “I don't think we want to be found by whoever's here. The shelves, though…  they're only a couple of metres. What if we climb them? We could walk along the top, get out that way?”
+
+    It could work, but you've had another idea.
+    
+    “This is a magic library” you reason slowly, “so these must be magic books. Maybe one of them could be helpful”.  
+
+    What do you do next?`,
+    image: "assets/library_shelves.jpg",
+    options: {
+        A: {
+            nextPart: "climb",
+            text: "Climb",
+            },
+        B: {
+        nextPart: "book_hunt",
+        text: "Search for a book",
+        },
+    },
+  },
+  climb : {
+    text: `
+      Taking a deep breath, Alex begins to climb. You also grab the shelf, hauling yourself up. It creaks under your weight. Almost immediately the books begin to quiver, shifting uneasily. You climb another shelf and then another as the rustling of pages grows louder. 
+
+      Suddenly, the books begin to rattle and shake, then launch themselves from the shelves! Their pages flap as they soar through the air to buffet and strike you from all directions. You and Alex scramble higher, but a tome smacks into the back of your head, slamming your face directly into the shelf and you cry out with pain.  
+
+      A sudden crack splits the air. The shelf judders violently, spilling you and Alex down in a chaos of falling books. Heavy tomes slam into you from all directions. Dazed, you try to stand, but slip as more books crash down upon you both. Then more, and more. 
+
+      The weight is unbearable, all light blotted out by the wreckage of shelves and countless texts. 
+
+      You lay there for a long time. You do not get up again. 
+
+      In the library, silence falls.`,
+    image: "assets/library_shelves.jpg",
+    options: {
+        A: {
+            nextPart: "play_again",
+            text: "THE END.",
+        },
+    },
+  },
+  book_hunt : {
+    text: `
+    You and Alex start looking for books that seem like they might contain useful information. 
+
+    "Look for anything out of the ordinary” you say.
+    
+    "Out of the ordinary? In a magic library?” he repeats. 
+    
+    Your gaze falls upon a book that seems to glow just a little bit.
+    
+    "Ssh! Look - there. That book. It's magic, it's got to be!" 
+    
+    Alex grabs it and together you flip through the pages. You realise the book is in old Latin and you understand a few words here and there. Each page is richly illustrated with fantastical images - men transforming into animals, or breathing fire, and accompanying each image is a handful of words printed large.     
+    
+    "I think these might be spells!"
+    
+    “How do you know what they do?” Alex points out. 
+    
+    “I recognise a couple of words -  I think we should pick really short spells, they can't be that dangerous, right?"
+    
+    There are two pages in the book with what seem like one word spells. You can barely read the faded letters, but you think one says "AVIOS", and the other says "ABSUMO".
+    
+    Which spell do you decide to cast?
+    `,
+    image: "assets/tome.jpg",
+    options: {
+        A: {
+            nextPart: "avios",
+            text: "AVIOS",
+        },
+        B: {  
+            nextPart: "absumo",
+            text: "ABSUMO",
+        },
+    },
+  },
+  avios : {
+    text: `
+    "Let's try AVIOS", Alex suggests. It sounds... lighter somehow.
+
+    You nod, feeling a glimmer of hope. "AVIOS" you pronounce carefully, and you experience an immediate sensation of weightlessness - you're floating! 
+
+    Alex quickly copies you, and you grasp his hand. Together you float gently above the maze, and then through the door, down the hall, and away from the nightmare of the past few hours.
+
+    You land outside the mansion, in front of your bikes. 
+
+    You're safe - you've escaped. 
+    `,
+    image: "assets/cover_house.jpg",
+    options: {
+        A: {
+            nextPart: "play_again",
+            text: "THE END.",
+        },
+    },
+  },
+  absumo : {
+    text: `
+    “ABSUMO. It sounds like “absorb”. Maybe the book will absorb things?” 
+
+    Alex sags with relief. “We can get rid of the shelves and clear the way” he suggests.
+
+    "Alright, here goes nothing", you point a finger at a bookshelf and shout "ABSUMO!".
+
+    The room goes dark instantly.
+
+    "What's happening?!" Alex cries out.
+
+    "I don't know - I can't see anything!"
+
+    Suddenly you feel the ground give way.
+
+    "Alex!" you scream, but your voice is swallowed by the sudden void all around you. You plummet, and you realise you should've spent more time studying Latin.
+    `,
+    image: "assets/tome.jpg",
+    options: {
+        A: {
+            nextPart: "play_again",
+            text: "THE END.",
+        },
     },
   },
   inspect_basement: {
@@ -225,11 +381,11 @@ const storyParts = {
     options: {
       A: {
         nextPart: "creep_in_dark",
-        text: "play it safe, keep the torch off",
+        text: "Play it safe, keep the torch off",
       },
       B: {
         nextPart: "use_torch",
-        text: "use torch to investigate",
+        text: "Use torch to investigate",
       },
     },
   },
@@ -265,11 +421,11 @@ const storyParts = {
     options: {
       A: {
         nextPart: "run_from_shadowy",
-        text: "run!",
+        text: "RUN!",
       },
       B: {
         nextPart: "fight_shadowy",
-        text: "fight",
+        text: "FIGHT!",
       },
     },
   },
@@ -344,11 +500,11 @@ const storyParts = {
     options: {
       A: {
         nextPart: "listen_in",
-        text: "eavesdrop",
+        text: "Eavesdrop",
       },
       B: {
         nextPart: "flee_and_fail",
-        text: "go home!",
+        text: "Go home!",
       },
     },
   },
@@ -387,7 +543,7 @@ const storyParts = {
     options: {
       A: {
         nextPart: "rescue_complete",
-        text: "run!",
+        text: "RUN!",
       },
     },
   },
@@ -443,11 +599,11 @@ const storyParts = {
     options: {
       A: {
         nextPart: "record_ritual",
-        text: "record the ritual",
+        text: "Record the ritual",
       },
       B: {
         nextPart: "cause_chaos",
-        text: "cause some chaos!",
+        text: "Cause some chaos!",
       },
     },
   },
@@ -503,7 +659,7 @@ const storyParts = {
     options: {
       A: {
         nextPart: "chaos_complete",
-        text: "run!",
+        text: "RUN!",
       },
     },
   },

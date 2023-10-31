@@ -689,5 +689,4 @@ const storyParts = {
       },
     },
   },
-  // ... continue structuring for all the nodes.
 };

@@ -89,7 +89,7 @@ const storyParts = {
     },
   },
   go_home: {
-    text: `"Nope, no way. That place could fall apart at any moment," you say, shaking your head. "Besides, it's getting late. We should head home" 
+    text: `"Nope, no way. That place could fall apart at any moment," you say, shaking your head. "Plus, it's getting late. We should head home." 
 
       You turn your bike away, but Alex calls back, 
       
@@ -139,7 +139,7 @@ const storyParts = {
   },
   hum_or_shadow: {
     text: `
-      "You're curious about the source of the light, but the hum is strangely irresistible. As one, you and Alex make your way deeper into the house, the sound growing louder with each step.
+      You're curious about the source of the light, but the hum is strangely irresistible. As one, you and Alex make your way deeper into the house, the sound growing louder with each step.
 
       As you and Alex continue down the corridor, the humming becomes more pronounced, echoing through the cold, draughty halls. But just as you're getting lost in its hypnotic rhythm, a swift movement catches your eye. A shadow, fleeting and elusive, darts into a room just off the corridor.
       

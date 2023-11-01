@@ -119,7 +119,7 @@ const storyParts = {
 
       Approaching it, you see that the book is ancient, its pages yellowed and fragile. It's open to a particular page, and a circular diagram is highlighted with a strange, glowing ink. The book's binding, however, is even more intriguing. It's made of an unfamiliar material, pale and leathery, with an odd texture that seems almost... alive. Familiar, somehow.
 
-      Alex leans in closer, squinting at the glowing circle.
+      You lean in closer, squinting at the glowing circle.
 
       You hesitate, torn between the mysterious image and the book's peculiar binding. 
 
@@ -191,15 +191,15 @@ const storyParts = {
   },
   examine_binding: {
     text: `
-        You say, "Let's take a closer look at the binding first."
+      You say, "Let's take a closer look at the binding first."
 
       You reach out and gently touch the book's cover. The texture is unlike anything you've felt on a book before, yet it's oddly familiar. Faintly spotted, just lightly. Your eyes drift to your own lightly freckled arm and the chilling realisation hits you: it's human skin.
       
-      Your heart races, and a cold dread settles in your stomach. "Alex," you whisper, pulling your hand back as if burned, "This... this is skin."
+      Your heart races, and a cold dread settles in your stomach. "Alex," you whisper, pulling your hand back as if burned, "This... this is <i>skin.</i>"
       
       But there's no reply. You glance around, searching for your sibling. "Alex?" you call out, your voice trembling.
       
-      He seems to have wandered deeper into the library, perhaps looking for another exit. You leave the book and pace towards a nearby corner. Turning it, you call out again. 
+      He seems to have wandered deeper into the library. You leave the book and pace towards a nearby corner. Turning it, you call out again. 
 
       “Alex? Where did you go?”
                 `,

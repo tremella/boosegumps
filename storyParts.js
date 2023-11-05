@@ -18,9 +18,9 @@ const storyParts = {
       
       Up ahead, the old mansion stands tall and foreboding. Its darkened windows seem to stare back at you.
       
-      For as long as you can remember, it's been the subject of countless rumours and ghost stories. But you've never seen anyone go in or out of it. It's been abandoned for years, and you've always wondered why.
+      For as long as you can remember, it's been the subject of countless rumours and ghost stories. It's been abandoned for years, and you've always wondered why.
 
-      Any other day, you'd have ignored it and gone home. But today, something about the mansion seems different. Your bike slows, and you come to a stop. The air is still, and there's a silence which feels... expectant. You can't shake off the feeling that something is about to happen. 
+      Any other day, you'd have ignored it and gone home. But today, something about it seems different. Your bike slows, and you come to a stop. The air is still, and there's a silence which feels... expectant. 
       
       Alex stops beside you.
       
@@ -35,23 +35,23 @@ const storyParts = {
   },
   the_dare: {
     text: `
-    'Is it just me, or does something seem off?' you ask, glancing at Alex.
-
-    "That place has always been creepy," he replies, unfazed. A beat passes, and he adds, "Dare me to ring the doorbell?" 
+    'Is it just me, or does something seem off?' you ask, eyeing Alex. 
     
-    "Oh, grow up" you snap, unable to pull your gaze from the mansion. He's always been like this, making up stupid dares and challenges, always pushing things too far. Most of the time he follows through whether you dare him or not, and then you both end up in trouble. 
-
-    True to form, Alex starts pedalling again, his bike coming to a halt right in front of the mansion's entrance.
+    "That place has always been creepy," he replies casually. He adds, "Dare me to ring the doorbell?" 
     
-    "Alex, don't!" you call out, but he's already off his bike. He bounds up the steps, and rings the doorbell. The chime echoes and after a tense and silent minute... nothing happens. 
-    
-    Alex turns to you. "See? Nothing to be afraid of. I bet it's not even locked." 
+    "Grow up," you snap, unable to look away from the mansion. As always, he suggests stupid dares, pushing too far. Most times he follows through no matter what you say, and you both wind up in trouble.
 
-    On impulse he reaches for the door handle, and it swings open with a loud creak. You stare at him. "Are you crazy? We can't just go in there!"
+    True to form, Alex bikes up and rings the bell. After a tense minute...nothing happens.
 
-    "Who'd know? Besides, it's not like we're stealing anything. We're just looking around. Now, are you coming or not?"
+    "See? It's fine. I bet it's unlocked." Sure enough, the door creaks open.
+
+    You stare at him. "We can't just go in there!"
+
+    "Who'd know? We're just looking around. Come on!"
+
+    Do you follow Alex inside? Or call it quits and head home?
     
-    Do you follow Alex into the abandoned mansion? Or do you call it quits and head home?`,
+    `,
     image: "assets/cover_house.jpg",
     options: {
       A: {
@@ -65,15 +65,14 @@ const storyParts = {
     },
   },
   enter_together: {
-    text: `As you step through the entrance, the first thing you notice is the smell. The air is thick with dust, but there's a strange metallic taste to the air you can't identify. In the dim light, you can barely make out the details of the foyer, but you can tell it must have been beautiful once. 
-
-      The main hall is dominated by a grand staircase. On either side, there are doors leading to various rooms, but one catches your eye - it's ajar, with a faint glow emanating from within. 
+    text: `
+      As you enter, you notice the smell - dust and mildew, with a strange metallic undertone you can't place. In the dim light, the once beautiful foyer is barely visible. The main hall holds a grand staircase and various rooms, but one catches your eye: ajar, with a faint glow within.
 
       "Alex", you say. "If this place is abandoned, then why is there a light on in that room?". Your voice echoes around the room, and you lower it instinctively.
 
       He isn't listening to you. Instead, he's squinting deeper into the foyer. "Can you hear that?" he murmurs, his voice barely audible. "It sounds like... humming?"
             
-      As you pause to listen, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from deeper within the house. It's puzzling - but so is the light coming from the room.
+      As you pause to listen, a soft humming sound reaches your ears. It's distant, almost melodic, and seems to be coming from deeper within the house.
       
       Torn between the two, you hesitate. Do you investigate the lit room, or the mysterious humming?`,
     image: "assets/foyer.jpg",
@@ -111,19 +110,16 @@ const storyParts = {
     },
   },
   enter_library: {
-    text: `"If someone's here, we'd better figure that out first", you reason. "Let's check out that room."
+    text: `
+    "Let's check out that room first," you say. You and Alex enter a small, cluttered library. Books line the shelves, spines faded with time. A fire glows in the hearth.
 
-      You and Alex head towards the door and step into a small library. The room is cluttered, and books line the shelves, their spines worn and faded from time. There's a fireplace, the glow of coals warming the room. Someone must have been here, you realise with a thrill.
+    A book on a pedestal catches your eye. It's ancient, pages yellowed and fragile, open to a peculiar glowing diagram. But the binding is more intriguing - pale, leathery, with an odd, almost living texture. Familiar, somehow.
 
-      But what immediately catches your attention is a single book displayed on a pedestal in the centre of the room.
+    You lean closer, squinting at the glowing glyphs. As you do, the room grows colder. An oppressive weight settles.
 
-      Approaching it, you see that the book is ancient, its pages yellowed and fragile. It's open to a particular page, and a circular diagram is highlighted with a strange, glowing ink. The book's binding, however, is even more intriguing. It's made of an unfamiliar material, pale and leathery, with an odd texture that seems almost... alive. Familiar, somehow.
+    You hesitate, torn between the mysterious image and the book's peculiar binding. 
 
-      You lean in closer, squinting at the glowing circle.
-
-      You hesitate, torn between the mysterious image and the book's peculiar binding. 
-
-      Do you choose to inspect the glowing glyphs closer? Or do you investigate the strange material of the book's binding, looking for clues about its origins?
+    Do you choose to inspect the glowing glyphs closer? Or do you investigate the strange material of the book's binding, looking for clues about its origins?
       `,
     image: "assets/tome.jpg",
     options: {
